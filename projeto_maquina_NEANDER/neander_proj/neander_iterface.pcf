@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue May 13 09:58:02 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clock_btn" LOCATE = SITE "M4" LEVEL 1;
+COMP "clock" LOCATE = SITE "B8" LEVEL 1;
+COMP "n_out" LOCATE = SITE "M11" LEVEL 1;
+COMP "reset" LOCATE = SITE "A7" LEVEL 1;
+COMP "z_out" LOCATE = SITE "M5" LEVEL 1;
+COMP "clock_mode_sw" LOCATE = SITE "P11" LEVEL 1;
+COMP "anode<0>" LOCATE = SITE "K14" LEVEL 1;
+COMP "anode<1>" LOCATE = SITE "F12" LEVEL 1;
+COMP "anode<2>" LOCATE = SITE "J12" LEVEL 1;
+COMP "anode<3>" LOCATE = SITE "M13" LEVEL 1;
+COMP "display_out<0>" LOCATE = SITE "M12" LEVEL 1;
+COMP "display_out<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "display_out<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "display_out<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "display_out<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "display_out<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "display_out<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "show_pc_btn" LOCATE = SITE "G12" LEVEL 1;
+COMP "show_ri_btn" LOCATE = SITE "C11" LEVEL 1;
+NET "clock_BUFGP/IBUFG" BEL "clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

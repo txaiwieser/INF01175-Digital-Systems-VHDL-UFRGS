@@ -1,0 +1,871 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: neander_iterface.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "neander_iterface.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "neander_iterface"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : neander_iterface
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/somador.vhd" in Library work.
+Architecture behavioral of Entity somador is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/subtrator.vhd" in Library work.
+Architecture behavioral of Entity subtrator is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/negador.vhd" in Library work.
+Architecture behavioral of Entity negador is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/logic_and.vhd" in Library work.
+Architecture behavioral of Entity logic_and is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/logic_or.vhd" in Library work.
+Architecture behavioral of Entity logic_or is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/multiplicador.vhd" in Library work.
+Architecture behavioral of Entity multiplicador is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/shift_r.vhd" in Library work.
+Architecture behavioral of Entity shift_r is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/shift_l.vhd" in Library work.
+Architecture behavioral of Entity shift_l is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/count_up_8bits.vhd" in Library work.
+Architecture behavioral of Entity count_up_8bits is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/mux_2x1_8bits.vhd" in Library work.
+Architecture behavioral of Entity mux_2x1_8bits is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/reg_nbits.vhd" in Library work.
+Architecture behavioral of Entity reg_nbits is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/intruction_decoder.vhd" in Library work.
+Architecture behavioral of Entity instruction_decoder is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/control_unity.vhd" in Library work.
+Architecture behavioral of Entity control_unity is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/mem_rom.vhd" in Library work.
+Architecture circ1 of Entity mem_rom is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/ula.vhd" in Library work.
+Architecture behavioral of Entity ula is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/Neander.vhd" in Library work.
+Architecture behavioral of Entity neander is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/bin_to_bcd_8bits.vhd" in Library work.
+Architecture behavioral of Entity bin_to_bcd_8bits is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/display_7seg_bcd.vhd" in Library work.
+Architecture behavioral of Entity display_7seg_bcd is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/freq_div.vhd" in Library work.
+Architecture behavioral of Entity freq_div is up to date.
+Compiling vhdl file "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/neander_interface.vhd" in Library work.
+Architecture behavioral of Entity neander_iterface is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <neander_iterface> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Neander> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <bin_to_bcd_8bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <display_7seg_bcd> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <freq_div> in library <work> (architecture <behavioral>) with generics.
+	active_cycles = 125000
+
+Analyzing hierarchy for entity <count_up_8bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux_2x1_8bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg_nbits> in library <work> (architecture <behavioral>) with generics.
+	n = 8
+
+Analyzing hierarchy for entity <reg_nbits> in library <work> (architecture <behavioral>) with generics.
+	n = 4
+
+Analyzing hierarchy for entity <instruction_decoder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <control_unity> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mem_rom> in library <work> (architecture <circ1>).
+
+Analyzing hierarchy for entity <ula> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg_nbits> in library <work> (architecture <behavioral>) with generics.
+	n = 2
+
+Analyzing hierarchy for entity <somador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <subtrator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <negador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <logic_and> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <logic_or> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <multiplicador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <shift_r> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <shift_l> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <neander_iterface> in library <work> (Architecture <behavioral>).
+Entity <neander_iterface> analyzed. Unit <neander_iterface> generated.
+
+Analyzing Entity <Neander> in library <work> (Architecture <behavioral>).
+Entity <Neander> analyzed. Unit <Neander> generated.
+
+Analyzing Entity <count_up_8bits> in library <work> (Architecture <behavioral>).
+Entity <count_up_8bits> analyzed. Unit <count_up_8bits> generated.
+
+Analyzing Entity <mux_2x1_8bits> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/mux_2x1_8bits.vhd" line 46: Mux is complete : default of case is discarded
+Entity <mux_2x1_8bits> analyzed. Unit <mux_2x1_8bits> generated.
+
+Analyzing generic Entity <reg_nbits.1> in library <work> (Architecture <behavioral>).
+	n = 8
+Entity <reg_nbits.1> analyzed. Unit <reg_nbits.1> generated.
+
+Analyzing generic Entity <reg_nbits.2> in library <work> (Architecture <behavioral>).
+	n = 4
+Entity <reg_nbits.2> analyzed. Unit <reg_nbits.2> generated.
+
+Analyzing Entity <instruction_decoder> in library <work> (Architecture <behavioral>).
+Entity <instruction_decoder> analyzed. Unit <instruction_decoder> generated.
+
+Analyzing Entity <control_unity> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/control_unity.vhd" line 53: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clock_manual>, <clock_button>, <I_NOP>, <I_NOT>, <I_SRL>, <I_SLL>, <I_HLT>, <I_JQ>, <S_ULA>, <I_STA>, <I_JP>
+Entity <control_unity> analyzed. Unit <control_unity> generated.
+
+Analyzing Entity <mem_rom> in library <work> (Architecture <circ1>).
+Entity <mem_rom> analyzed. Unit <mem_rom> generated.
+
+Analyzing Entity <ula> in library <work> (Architecture <behavioral>).
+Entity <ula> analyzed. Unit <ula> generated.
+
+Analyzing Entity <somador> in library <work> (Architecture <behavioral>).
+Entity <somador> analyzed. Unit <somador> generated.
+
+Analyzing Entity <subtrator> in library <work> (Architecture <behavioral>).
+Entity <subtrator> analyzed. Unit <subtrator> generated.
+
+Analyzing Entity <negador> in library <work> (Architecture <behavioral>).
+Entity <negador> analyzed. Unit <negador> generated.
+
+Analyzing Entity <logic_and> in library <work> (Architecture <behavioral>).
+Entity <logic_and> analyzed. Unit <logic_and> generated.
+
+Analyzing Entity <logic_or> in library <work> (Architecture <behavioral>).
+Entity <logic_or> analyzed. Unit <logic_or> generated.
+
+Analyzing Entity <multiplicador> in library <work> (Architecture <behavioral>).
+Entity <multiplicador> analyzed. Unit <multiplicador> generated.
+
+Analyzing Entity <shift_r> in library <work> (Architecture <behavioral>).
+Entity <shift_r> analyzed. Unit <shift_r> generated.
+
+Analyzing Entity <shift_l> in library <work> (Architecture <behavioral>).
+Entity <shift_l> analyzed. Unit <shift_l> generated.
+
+Analyzing generic Entity <reg_nbits.3> in library <work> (Architecture <behavioral>).
+	n = 2
+Entity <reg_nbits.3> analyzed. Unit <reg_nbits.3> generated.
+
+Analyzing Entity <bin_to_bcd_8bits> in library <work> (Architecture <behavioral>).
+Entity <bin_to_bcd_8bits> analyzed. Unit <bin_to_bcd_8bits> generated.
+
+Analyzing Entity <display_7seg_bcd> in library <work> (Architecture <behavioral>).
+Entity <display_7seg_bcd> analyzed. Unit <display_7seg_bcd> generated.
+
+Analyzing generic Entity <freq_div> in library <work> (Architecture <behavioral>).
+	active_cycles = 125000
+Entity <freq_div> analyzed. Unit <freq_div> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <bin_to_bcd_8bits>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/bin_to_bcd_8bits.vhd".
+    Found 4-bit adder for signal <var_11_8$add0000> created at line 55.
+    Found 4-bit adder for signal <var_11_8$add0001> created at line 55.
+    Found 4-bit adder for signal <var_11_8$add0002> created at line 55.
+    Found 4-bit adder for signal <var_11_8$add0003> created at line 55.
+    Found 4-bit adder for signal <var_11_8$add0004> created at line 55.
+    Found 5-bit comparator greater for signal <var_15$cmp_gt0000> created at line 57.
+    Found 5-bit comparator greater for signal <var_15$cmp_gt0001> created at line 57.
+    Found 4-bit adder for signal <var_15_12$add0000> created at line 58.
+    Found 4-bit adder for signal <var_15_12$add0001> created at line 58.
+    Found 5-bit comparator greater for signal <var_9$cmp_gt0000> created at line 54.
+    Found 5-bit comparator greater for signal <var_9$cmp_gt0001> created at line 54.
+    Found 5-bit comparator greater for signal <var_9$cmp_gt0002> created at line 54.
+    Found 5-bit comparator greater for signal <var_9$cmp_gt0003> created at line 54.
+    Found 5-bit comparator greater for signal <var_9$cmp_gt0004> created at line 54.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+Unit <bin_to_bcd_8bits> synthesized.
+
+
+Synthesizing Unit <display_7seg_bcd>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/display_7seg_bcd.vhd".
+    Found 16x7-bit ROM for signal <segment7$mux0001> created at line 44.
+    Found 7-bit register for signal <segment7>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   7 D-type flip-flop(s).
+Unit <display_7seg_bcd> synthesized.
+
+
+Synthesizing Unit <freq_div>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/freq_div.vhd".
+    Found 17-bit up counter for signal <counter>.
+    Found 1-bit register for signal <temporal>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <freq_div> synthesized.
+
+
+Synthesizing Unit <count_up_8bits>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/count_up_8bits.vhd".
+    Found 8-bit up counter for signal <upCount>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <count_up_8bits> synthesized.
+
+
+Synthesizing Unit <mux_2x1_8bits>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/mux_2x1_8bits.vhd".
+Unit <mux_2x1_8bits> synthesized.
+
+
+Synthesizing Unit <reg_nbits_1>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/reg_nbits.vhd".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg_nbits_1> synthesized.
+
+
+Synthesizing Unit <reg_nbits_2>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/reg_nbits.vhd".
+    Found 4-bit register for signal <q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reg_nbits_2> synthesized.
+
+
+Synthesizing Unit <instruction_decoder>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/intruction_decoder.vhd".
+Unit <instruction_decoder> synthesized.
+
+
+Synthesizing Unit <control_unity>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/control_unity.vhd".
+WARNING:Xst:646 - Signal <OTH> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <PREVIOUS_STATE>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <PREVIOUS_STATE> of Case statement line 57 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <PREVIOUS_STATE> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+WARNING:Xst:737 - Found 1-bit latch for signal <MX_RDM>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MX_REM>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD_RDM>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD_REM>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD_AC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <INC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD_PC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD_RI>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 17-bit latch for signal <NEXT_STATE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 17-bit register for signal <PREVIOUS_STATE>.
+Unit <control_unity> synthesized.
+
+
+Synthesizing Unit <mem_rom>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/mem_rom.vhd".
+    Found 64x8-bit ROM for signal <saida$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <mem_rom> synthesized.
+
+
+Synthesizing Unit <reg_nbits_3>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/reg_nbits.vhd".
+    Found 2-bit register for signal <q>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <reg_nbits_3> synthesized.
+
+
+Synthesizing Unit <somador>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/somador.vhd".
+    Found 8-bit adder for signal <z>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <somador> synthesized.
+
+
+Synthesizing Unit <subtrator>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/subtrator.vhd".
+    Found 8-bit subtractor for signal <z>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <subtrator> synthesized.
+
+
+Synthesizing Unit <negador>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/negador.vhd".
+Unit <negador> synthesized.
+
+
+Synthesizing Unit <logic_and>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/logic_and.vhd".
+Unit <logic_and> synthesized.
+
+
+Synthesizing Unit <logic_or>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/logic_or.vhd".
+Unit <logic_or> synthesized.
+
+
+Synthesizing Unit <multiplicador>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/multiplicador.vhd".
+    Found 8x8-bit multiplier for signal <a>.
+    Found 16-bit comparator less for signal <z$cmp_lt0000> created at line 21.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Comparator(s).
+Unit <multiplicador> synthesized.
+
+
+Synthesizing Unit <shift_r>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/shift_r.vhd".
+WARNING:Xst:647 - Input <x<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <shift_r> synthesized.
+
+
+Synthesizing Unit <shift_l>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/shift_l.vhd".
+WARNING:Xst:647 - Input <x<7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <shift_l> synthesized.
+
+
+Synthesizing Unit <ula>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/ula.vhd".
+Unit <ula> synthesized.
+
+
+Synthesizing Unit <Neander>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/Neander.vhd".
+WARNING:Xst:1305 - Output <z_out> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <n_out> is never assigned. Tied to value 0.
+Unit <Neander> synthesized.
+
+
+Synthesizing Unit <neander_iterface>.
+    Related source file is "//psf/shared_vm/NEANDER/neander03/arquivos VDHL/neander_interface.vhd".
+WARNING:Xst:1780 - Signal <neander_CLOCK> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <led_SIGNAL> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 8                                              |
+    | Clock              | display_CLOCK             (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <binary_to_bcd_conversor_IN_DATA>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   8 D-type flip-flop(s).
+Unit <neander_iterface> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 64x8-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 9
+ 4-bit adder                                           : 7
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 9
+ 1-bit register                                        : 1
+ 17-bit register                                       : 1
+ 2-bit register                                        : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 4
+# Latches                                              : 9
+ 1-bit latch                                           : 8
+ 17-bit latch                                          : 1
+# Comparators                                          : 8
+ 16-bit comparator less                                : 1
+ 5-bit comparator greater                              : 7
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <STATE/FSM> on signal <STATE[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 0001
+ s1    | 0010
+ s2    | 0100
+ s3    | 1000
+-------------------
+
+Synthesizing (advanced) Unit <Neander>.
+	Found pipelined multiplier on signal <ula_com/s6/a>:
+		- 1 pipeline level(s) found in a register on signal <acu_OUT_DATA>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <rdm_reg_OUT_DATA>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier ula_com/s6/Mmult_a by adding 1 register level(s).
+Unit <Neander> synthesized (advanced).
+
+Synthesizing (advanced) Unit <display_7seg_bcd>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_segment7_mux0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <display_7seg_bcd> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 64x8-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 8x8-bit registered multiplier                         : 1
+# Adders/Subtractors                                   : 9
+ 4-bit adder                                           : 7
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 67
+ Flip-Flops                                            : 67
+# Latches                                              : 9
+ 1-bit latch                                           : 8
+ 17-bit latch                                          : 1
+# Comparators                                          : 8
+ 16-bit comparator less                                : 1
+ 5-bit comparator greater                              : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <acu_reg/q_7> in Unit <Neander> is equivalent to the following FF/Latch, which will be removed : <zn_reg/q_0> 
+
+Optimizing unit <neander_iterface> ...
+
+Optimizing unit <bin_to_bcd_8bits> ...
+
+Optimizing unit <display_7seg_bcd> ...
+
+Optimizing unit <mem_rom> ...
+
+Optimizing unit <control_unity> ...
+
+Optimizing unit <Neander> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block neander_iterface, actual ratio is 19.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 91
+ Flip-Flops                                            : 91
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : neander_iterface.ngr
+Top Level Output File Name         : neander_iterface
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 449
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 16
+#      LUT2                        : 43
+#      LUT2_D                      : 1
+#      LUT2_L                      : 3
+#      LUT3                        : 63
+#      LUT3_D                      : 3
+#      LUT3_L                      : 6
+#      LUT4                        : 148
+#      LUT4_D                      : 19
+#      LUT4_L                      : 22
+#      MUXCY                       : 42
+#      MUXF5                       : 25
+#      MUXF6                       : 7
+#      VCC                         : 1
+#      XORCY                       : 41
+# FlipFlops/Latches                : 116
+#      FD                          : 13
+#      FDC                         : 36
+#      FDCE                        : 9
+#      FDE                         : 29
+#      FDP                         : 2
+#      FDS                         : 2
+#      LD                          : 25
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 5
+#      OBUF                        : 13
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      178  out of    960    18%  
+ Number of Slice Flip Flops:            116  out of   1920     6%  
+ Number of 4 input LUTs:                332  out of   1920    17%  
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of     83    22%  
+ Number of MULT18X18SIOs:                 1  out of      4    25%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------+--------------------------------------------+-------+
+Clock Signal                                                                          | Clock buffer(FF name)                      | Load  |
+--------------------------------------------------------------------------------------+--------------------------------------------+-------+
+display_clock_freq/temporal                                                           | NONE(binary_to_bcd_conversor_IN_DATA_0)    | 19    |
+clock                                                                                 | BUFGP                                      | 73    |
+neander_block/control/MX_RDM_or0000(neander_block/control/MX_RDM_or000032:O)          | NONE(*)(neander_block/control/LD_RI)       | 8     |
+neander_block/control/NEXT_STATE_not0001(neander_block/control/NEXT_STATE_not000124:O)| NONE(*)(neander_block/control/NEXT_STATE_0)| 17    |
+--------------------------------------------------------------------------------------+--------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 47    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.938ns (Maximum Frequency: 100.625MHz)
+   Minimum input arrival time before clock: 3.233ns
+   Maximum output required time after clock: 5.295ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 8.654ns (frequency: 115.554MHz)
+  Total number of paths / destination ports: 3332 / 72
+-------------------------------------------------------------------------
+Delay:               8.654ns (Levels of Logic = 8)
+  Source:            neander_block/rdm_reg/q_0 (FF)
+  Destination:       neander_block/zn_reg/q_1 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: neander_block/rdm_reg/q_0 to neander_block/zn_reg/q_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.514   0.721  neander_block/rdm_reg/q_0 (neander_block/rdm_reg/q_0)
+     LUT2:I0->O            1   0.612   0.000  neander_block/ula_com/s2/Msub_z_lut<0> (neander_block/ula_com/s2/Msub_z_lut<0>)
+     XORCY:LI->O           1   0.458   0.426  neander_block/ula_com/s2/Msub_z_xor<0> (neander_block/ula_com/s_sub<0>)
+     LUT4:I1->O            2   0.612   0.383  neander_block/ula_com/saida<0>74 (neander_block/ula_com/saida<0>74)
+     LUT4:I3->O            1   0.612   0.360  neander_block/ula_com/saida<0>90_SW1 (N89)
+     LUT4:I3->O            3   0.612   0.520  neander_block/ula_com/saida<1>284_SW1 (N54)
+     LUT2:I1->O            1   0.612   0.360  neander_block/ula_com/ZERO12_SW0_SW1 (N117)
+     LUT4:I3->O            1   0.612   0.360  neander_block/ula_com/ZERO26_SW1 (N104)
+     LUT4:I3->O            1   0.612   0.000  neander_block/ula_com/ZERO26 (neander_block/z_CONTROL_SIGNALL)
+     FDE:D                     0.268          neander_block/zn_reg/q_1
+    ----------------------------------------
+    Total                      8.654ns (5.524ns logic, 3.130ns route)
+                                       (63.8% logic, 36.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'display_clock_freq/temporal'
+  Clock period: 9.938ns (frequency: 100.625MHz)
+  Total number of paths / destination ports: 4937 / 13
+-------------------------------------------------------------------------
+Delay:               9.938ns (Levels of Logic = 7)
+  Source:            binary_to_bcd_conversor_IN_DATA_4 (FF)
+  Destination:       decimal_display/segment7_3 (FF)
+  Source Clock:      display_clock_freq/temporal rising
+  Destination Clock: display_clock_freq/temporal rising
+
+  Data Path: binary_to_bcd_conversor_IN_DATA_4 to decimal_display/segment7_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              18   0.514   1.060  binary_to_bcd_conversor_IN_DATA_4 (binary_to_bcd_conversor_IN_DATA_4)
+     LUT4_D:I0->O          1   0.612   0.360  binary_to_bcd_conversor/var_9_cmp_gt0002_SW3 (N69)
+     LUT4:I3->O           10   0.612   0.753  binary_to_bcd_conversor/var_10_mux000411 (binary_to_bcd_conversor/N01)
+     LUT4:I3->O            1   0.612   0.360  seg7_IN_DATA<1>65 (seg7_IN_DATA<1>65)
+     LUT4:I3->O            1   0.612   0.360  seg7_IN_DATA<1>82_SW0 (N112)
+     LUT4:I3->O            8   0.612   0.712  seg7_IN_DATA<1>208 (seg7_IN_DATA<1>)
+     LUT4:I1->O            1   0.612   0.360  seg7_IN_DATA<2>214_SW0 (N49)
+     LUT4:I3->O            2   0.612   0.380  decimal_display/Mrom_segment7_mux000161 (decimal_display/Mrom_segment7_mux00016)
+     FDS:S                     0.795          decimal_display/segment7_3
+    ----------------------------------------
+    Total                      9.938ns (5.593ns logic, 4.345ns route)
+                                       (56.3% logic, 43.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'display_clock_freq/temporal'
+  Total number of paths / destination ports: 20 / 8
+-------------------------------------------------------------------------
+Offset:              3.233ns (Levels of Logic = 3)
+  Source:            show_pc_btn (PAD)
+  Destination:       binary_to_bcd_conversor_IN_DATA_4 (FF)
+  Destination Clock: display_clock_freq/temporal rising
+
+  Data Path: show_pc_btn to binary_to_bcd_conversor_IN_DATA_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.106   0.969  show_pc_btn_IBUF (show_pc_btn_IBUF)
+     LUT3:I0->O            1   0.612   0.000  binary_to_bcd_conversor_IN_DATA_mux0002<7>1 (binary_to_bcd_conversor_IN_DATA_mux0002<7>1)
+     MUXF5:I1->O           1   0.278   0.000  binary_to_bcd_conversor_IN_DATA_mux0002<7>_f5 (binary_to_bcd_conversor_IN_DATA_mux0002<7>)
+     FD:D                      0.268          binary_to_bcd_conversor_IN_DATA_7
+    ----------------------------------------
+    Total                      3.233ns (2.264ns logic, 0.969ns route)
+                                       (70.0% logic, 30.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'neander_block/control/NEXT_STATE_not0001'
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Offset:              2.589ns (Levels of Logic = 2)
+  Source:            clock_btn (PAD)
+  Destination:       neander_block/control/NEXT_STATE_0 (LATCH)
+  Destination Clock: neander_block/control/NEXT_STATE_not0001 falling
+
+  Data Path: clock_btn to neander_block/control/NEXT_STATE_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.603  clock_btn_IBUF (clock_btn_IBUF)
+     LUT4:I0->O            1   0.612   0.000  neander_block/control/NEXT_STATE_mux0010<1>1 (neander_block/control/NEXT_STATE_mux0010<1>)
+     LD:D                      0.268          neander_block/control/NEXT_STATE_1
+    ----------------------------------------
+    Total                      2.589ns (1.986ns logic, 0.603ns route)
+                                       (76.7% logic, 23.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'display_clock_freq/temporal'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              5.295ns (Levels of Logic = 2)
+  Source:            STATE_FSM_FFd4 (FF)
+  Destination:       anode<0> (PAD)
+  Source Clock:      display_clock_freq/temporal rising
+
+  Data Path: STATE_FSM_FFd4 to anode<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              8   0.514   0.643  STATE_FSM_FFd4 (STATE_FSM_FFd4)
+     INV:I->O              1   0.612   0.357  STATE_FSM_Out71_INV_0 (anode_0_OBUF)
+     OBUF:I->O                 3.169          anode_0_OBUF (anode<0>)
+    ----------------------------------------
+    Total                      5.295ns (4.295ns logic, 1.000ns route)
+                                       (81.1% logic, 18.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.34 secs
+ 
+--> 
+
+Total memory usage is 286160 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+
