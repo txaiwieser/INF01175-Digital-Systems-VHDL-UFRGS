@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="EX1.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="COMPARADOR_DE_FUNCOES.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="COMPARADOR_DE_FUNCOES.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="COMPARADOR_DE_FUNCOES.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="COMPARADOR_DE_FUNCOES.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="COMPARADOR_DE_FUNCOES.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="COMPARADOR_DE_FUNCOES.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="COMPARADOR_DE_FUNCOES.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="COMPARADOR_DE_FUNCOES.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="COMPARADOR_DE_FUNCOES.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="COMPARADOR_DE_FUNCOES.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="COMPARADOR_DE_FUNCOES.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="COMPARADOR_DE_FUNCOES.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="COMPARADOR_DE_FUNCOES.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="COMPARADOR_DE_FUNCOES.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="COMPARADOR_DE_FUNCOES.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="COMPARADOR_DE_FUNCOES.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="COMPARADOR_DE_FUNCOES.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="COMPARADOR_DE_FUNCOES.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="COMPARADOR_DE_FUNCOES.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="COMPARADOR_DE_FUNCOES_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="COMPARADOR_DE_FUNCOES_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="COMPARADOR_DE_FUNCOES_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="COMPARADOR_DE_FUNCOES_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="COMPARADOR_DE_FUNCOES_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="COMPARADOR_DE_FUNCOES_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="COMPARADOR_DE_FUNCOES_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="COMPARADOR_DE_FUNCOES_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="COMPARADOR_DE_FUNCOES_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="COMPARADOR_DE_FUNCOES_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="COMPARADOR_DE_FUNCOES_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="COMPARADOR_DE_FUNCOES_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="COMPARADOR_DE_FUNCOES_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="COMPARADOR_DE_FUNCOES_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="COMPARADOR_DE_FUNCOES_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="COMPARADOR_DE_FUNCOES_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PARTE_CONTROLE.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PARTE_CONTROLE.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PARTE_CONTROLE.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PARTE_OPERATIVA.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PARTE_OPERATIVA.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PARTE_OPERATIVA.xst"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_COMPARADOR_DE_FUNCOES_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_COMPARADOR_DE_FUNCOES_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_COMPARADOR_DE_FUNCOES_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_COMPARADOR_DE_FUNCOES_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1403983152" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1403983152">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983984" xil_pn:in_ck="-5391647943922092428" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1403983984">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../EX1_vhdl/PARTE_CONTROLE.vhd"/>
+      <outfile xil_pn:name="../EX1_vhdl/PARTE_OPERATIVA.vhd"/>
+      <outfile xil_pn:name="../EX1_vhdl/comparador_de_funcoes.vhd"/>
+      <outfile xil_pn:name="../EX1_vhdl/tb_COMPARADOR_DE_FUNCOES.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983272" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7868569655123637197" xil_pn:start_ts="1403983272">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983272" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8913674901763800305" xil_pn:start_ts="1403983272">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983152" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="801843529801676305" xil_pn:start_ts="1403983152">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983984" xil_pn:in_ck="-5391647943922092428" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1403983984">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../EX1_vhdl/PARTE_CONTROLE.vhd"/>
+      <outfile xil_pn:name="../EX1_vhdl/PARTE_OPERATIVA.vhd"/>
+      <outfile xil_pn:name="../EX1_vhdl/comparador_de_funcoes.vhd"/>
+      <outfile xil_pn:name="../EX1_vhdl/tb_COMPARADOR_DE_FUNCOES.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983988" xil_pn:in_ck="-5391647943922092428" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7429765953034501404" xil_pn:start_ts="1403983984">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_COMPARADOR_DE_FUNCOES_beh.prj"/>
+      <outfile xil_pn:name="tb_COMPARADOR_DE_FUNCOES_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983988" xil_pn:in_ck="6190377956183214182" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5014664525897124599" xil_pn:start_ts="1403983988">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_COMPARADOR_DE_FUNCOES_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1403971301" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1403971301">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403971301" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8992949395838973945" xil_pn:start_ts="1403971301">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403971301" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="801843529801676305" xil_pn:start_ts="1403971301">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403971301" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1403971301">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403971301" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7790825266818188795" xil_pn:start_ts="1403971301">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403971301" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1403971301">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403971301" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1386878743379825445" xil_pn:start_ts="1403971301">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983017" xil_pn:in_ck="8676157998060164472" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5000433405111961586" xil_pn:start_ts="1403983010">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.lso"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.ngc"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.ngr"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.prj"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.stx"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.syr"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.xst"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_vhdl.prj"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983105" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4828325327717711514" xil_pn:start_ts="1403983105">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983110" xil_pn:in_ck="-159386834555191960" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1067981649624465470" xil_pn:start_ts="1403983105">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.bld"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.ngd"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983114" xil_pn:in_ck="-159386834555191959" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3236488012892527759" xil_pn:start_ts="1403983110">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.pcf"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_map.map"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_map.mrp"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_map.ncd"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_map.ngm"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_map.xrpt"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_summary.xml"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983123" xil_pn:in_ck="3592302860765632770" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1403983114">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.ncd"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.pad"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.par"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.ptwx"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.unroutes"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.xpi"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_pad.csv"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_pad.txt"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1403983123" xil_pn:in_ck="-159386834555192091" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1403983120">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.twr"/>
+      <outfile xil_pn:name="COMPARADOR_DE_FUNCOES.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

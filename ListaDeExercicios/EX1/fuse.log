@@ -1,0 +1,25 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o Z:/Lista de Exercicios/EX1/tb_COMPARADOR_DE_FUNCOES_isim_beh.exe -prj Z:/Lista de Exercicios/EX1/tb_COMPARADOR_DE_FUNCOES_beh.prj work.tb_COMPARADOR_DE_FUNCOES 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 5
+Turning on mult-threading, number of parallel sub-compilation jobs: 10 
+Determining compilation order of HDL files
+Parsing VHDL file "Z:/Lista de Exercicios/EX1/../EX1_vhdl/PARTE_OPERATIVA.vhd" into library work
+Parsing VHDL file "Z:/Lista de Exercicios/EX1/../EX1_vhdl/PARTE_CONTROLE.vhd" into library work
+Parsing VHDL file "Z:/Lista de Exercicios/EX1/../EX1_vhdl/comparador_de_funcoes.vhd" into library work
+Parsing VHDL file "Z:/Lista de Exercicios/EX1/../EX1_vhdl/tb_COMPARADOR_DE_FUNCOES.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity PARTE_OPERATIVA [parte_operativa_default]
+Compiling architecture behavioral of entity PARTE_CONTROLE [parte_controle_default]
+Compiling architecture behavioral of entity COMPARADOR_DE_FUNCOES [comparador_de_funcoes_default]
+Compiling architecture behavior of entity tb_comparador_de_funcoes
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 VHDL Units
+Built simulation executable Z:/Lista de Exercicios/EX1/tb_COMPARADOR_DE_FUNCOES_isim_beh.exe
+Fuse Memory Usage: 33976 KB
+Fuse CPU Usage: 452 ms

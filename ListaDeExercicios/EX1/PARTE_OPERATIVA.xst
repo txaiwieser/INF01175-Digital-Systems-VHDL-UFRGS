@@ -1,0 +1,5 @@
+set -tmpdir "Z:/Lista de Exercicios/EX1/xst/projnav.tmp"
+set -xsthdpdir "Z:/Lista de Exercicios/EX1/xst"
+elaborate
+-ifn PARTE_OPERATIVA.prj
+-ifmt mixed

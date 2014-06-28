@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+xst -intstyle ise -ifn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.xst" -ofn "Z:/Lista de Exercicios/EX1/COMPARADOR_DE_FUNCOES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "COMPARADOR_DE_FUNCOES.ngc" COMPARADOR_DE_FUNCOES.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o COMPARADOR_DE_FUNCOES_map.ncd COMPARADOR_DE_FUNCOES.ngd COMPARADOR_DE_FUNCOES.pcf 
+par -w -intstyle ise -ol high -t 1 COMPARADOR_DE_FUNCOES_map.ncd COMPARADOR_DE_FUNCOES.ncd COMPARADOR_DE_FUNCOES.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml COMPARADOR_DE_FUNCOES.twx COMPARADOR_DE_FUNCOES.ncd -o COMPARADOR_DE_FUNCOES.twr COMPARADOR_DE_FUNCOES.pcf 

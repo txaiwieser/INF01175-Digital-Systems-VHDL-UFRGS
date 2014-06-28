@@ -1,0 +1,26 @@
+V3 11
+FL "//psf/shared_vm/Lista de Exercicios/EX1_vhdl/comparador_de_funcoes.vhd" 2014/06/28.14:05:16 P.20131013
+EN work/COMPARADOR_DE_FUNCOES 1403983016 \
+      FL "//psf/shared_vm/Lista de Exercicios/EX1_vhdl/comparador_de_funcoes.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/COMPARADOR_DE_FUNCOES/Behavioral 1403983017 \
+      FL "//psf/shared_vm/Lista de Exercicios/EX1_vhdl/comparador_de_funcoes.vhd" \
+      EN work/COMPARADOR_DE_FUNCOES 1403983016 CP PARTE_OPERATIVA \
+      CP PARTE_CONTROLE
+FL "//psf/shared_vm/Lista de Exercicios/EX1_vhdl/PARTE_CONTROLE.vhd" 2014/06/28.13:10:13 P.20131013
+EN work/PARTE_CONTROLE 1403983014 \
+      FL "//psf/shared_vm/Lista de Exercicios/EX1_vhdl/PARTE_CONTROLE.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PARTE_CONTROLE/Behavioral 1403983015 \
+      FL "//psf/shared_vm/Lista de Exercicios/EX1_vhdl/PARTE_CONTROLE.vhd" \
+      EN work/PARTE_CONTROLE 1403983014
+FL "//psf/shared_vm/Lista de Exercicios/EX1_vhdl/PARTE_OPERATIVA.vhd" 2014/06/28.16:16:50 P.20131013
+EN work/PARTE_OPERATIVA 1403983012 \
+      FL "//psf/shared_vm/Lista de Exercicios/EX1_vhdl/PARTE_OPERATIVA.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PARTE_OPERATIVA/Behavioral 1403983013 \
+      FL "//psf/shared_vm/Lista de Exercicios/EX1_vhdl/PARTE_OPERATIVA.vhd" \
+      EN work/PARTE_OPERATIVA 1403983012

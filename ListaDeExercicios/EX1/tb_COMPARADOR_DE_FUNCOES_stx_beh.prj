@@ -1,0 +1,4 @@
+vhdl isim_temp "../EX1_vhdl/PARTE_OPERATIVA.vhd"
+vhdl isim_temp "../EX1_vhdl/PARTE_CONTROLE.vhd"
+vhdl isim_temp "../EX1_vhdl/comparador_de_funcoes.vhd"
+vhdl isim_temp "../EX1_vhdl/tb_COMPARADOR_DE_FUNCOES.vhd"
