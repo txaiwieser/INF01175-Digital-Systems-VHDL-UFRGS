@@ -1,0 +1,5 @@
+set -tmpdir "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_1/xst/projnav.tmp"
+set -xsthdpdir "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_1/xst"
+elaborate
+-ifn mad_block.prj
+-ifmt mixed

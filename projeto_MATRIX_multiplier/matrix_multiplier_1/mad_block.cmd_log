@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_1/mad_block.xst" -ofn "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_1/mad_block.syr" 
