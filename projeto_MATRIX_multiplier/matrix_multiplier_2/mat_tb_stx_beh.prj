@@ -1,0 +1,3 @@
+vhdl isim_temp "../matrix_multiplier_2_arq/mat_ply.vhd"
+vhdl isim_temp "../matrix_multiplier_2_arq/test_mat.vhd"
+vhdl isim_temp "../matrix_multiplier_2_arq/mat_tb.vhd"

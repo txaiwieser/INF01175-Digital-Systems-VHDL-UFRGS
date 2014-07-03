@@ -1,0 +1,32 @@
+ISim log file
+Running: Z:\ProjetosSistemasDigitaisVHDL\projeto_MATRIX_multiplier\matrix_multiplier_2\mat_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_2/mat_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1s
+Stopped at time : 23177 ns : File "//psf/Shared_VM/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_2_arq/mat_tb.vhd" Line 28
+# run .5s
+Stopped at time : 47130 ns : File "//psf/Shared_VM/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_2_arq/mat_tb.vhd" Line 38
+# restart
+# run .1s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 74609 ns : File "//psf/Shared_VM/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_2_arq/mat_tb.vhd" Line 28
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# restart
+# run 10.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100.00us

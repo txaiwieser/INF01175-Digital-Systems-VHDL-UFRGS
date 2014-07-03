@@ -1,0 +1,2 @@
+vhdl work "../matrix_multiplier_2_arq/mat_ply.vhd"
+vhdl work "../matrix_multiplier_2_arq/test_mat.vhd"

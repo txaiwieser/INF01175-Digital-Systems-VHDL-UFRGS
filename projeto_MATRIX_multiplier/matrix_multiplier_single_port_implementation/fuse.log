@@ -1,0 +1,34 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/tb_matrix_multiplier_isim_beh.exe -prj Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/tb_matrix_multiplier_beh.prj work.tb_matrix_multiplier 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 5
+Turning on mult-threading, number of parallel sub-compilation jobs: 10 
+Determining compilation order of HDL files
+Parsing VHDL file "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/ipcore_dir/mem48single.vhd" into library work
+Parsing VHDL file "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/../matrix_multiplier_single_port_implementation_arq/mm_state_machine.vhd" into library work
+Parsing VHDL file "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/../matrix_multiplier_single_port_implementation_arq/mad_block.vhd" into library work
+Parsing VHDL file "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/../matrix_multiplier_single_port_implementation_arq/matrix_multiplier.vhd" into library work
+Parsing VHDL file "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/../matrix_multiplier_single_port_implementation_arq/tb_matrix_multiplier.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity mad_block [mad_block_default]
+Compiling architecture behavioral of entity mm_state_machine [mm_state_machine_default]
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture mem48single_a of entity mem48single [mem48single_default]
+Compiling architecture behavioral of entity matrix_multiplier [matrix_multiplier_default]
+Compiling architecture behavior of entity tb_matrix_multiplier
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 24 VHDL Units
+Built simulation executable Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/tb_matrix_multiplier_isim_beh.exe
+Fuse Memory Usage: 40064 KB
+Fuse CPU Usage: 858 ms

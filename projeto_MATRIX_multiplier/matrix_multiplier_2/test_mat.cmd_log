@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_2/test_mat.xst" -ofn "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_2/test_mat.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 test_mat.ngc test_mat.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o test_mat_map.ncd test_mat.ngd test_mat.pcf 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/tb_matrix_multiplier_isim_beh.exe" -prj "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/tb_matrix_multiplier_beh.prj" "work.tb_matrix_multiplier" 
