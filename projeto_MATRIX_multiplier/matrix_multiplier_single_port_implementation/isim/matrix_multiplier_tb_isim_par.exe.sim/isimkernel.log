@@ -1,0 +1,32 @@
+Command line:
+   matrix_multiplier_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/matrix_multiplier_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  49296
+
+Thu Jul 03 03:41:57 2014
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 666.943 Meg
+
+ Total Signals          : 47
+ Total Nets             : 35
+ Total Signal Drivers   : 12
+ Total Blocks           : 18
+ Total Primitive Blocks : 12
+ Total Processes        : 12
+ Total Traceable Variables  : 109
+ Total Scalar Nets and Variables : 4516
+Total Line Count : 74
+Total Line Count : 74
+
+ Total Simulation Time: 0.21875 sec
+
+ Current Memory Usage: 666.943 Meg
+
+Thu Jul 03 03:44:33 2014
+

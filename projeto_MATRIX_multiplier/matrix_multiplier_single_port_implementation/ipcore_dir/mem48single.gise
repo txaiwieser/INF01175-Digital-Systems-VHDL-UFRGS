@@ -27,6 +27,27 @@
     <file xil_pn:fileType="FILE_VHO" xil_pn:name="mem48single.vho" xil_pn:origination="imported"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1404357370" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1404357370">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1404368834" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3011292937368581332" xil_pn:start_ts="1404368834">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1404368834" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4853663506329226661" xil_pn:start_ts="1404368834">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1404368834" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1404368834">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1404368834" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1754895867772481066" xil_pn:start_ts="1404368834">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
 
 </generated_project>

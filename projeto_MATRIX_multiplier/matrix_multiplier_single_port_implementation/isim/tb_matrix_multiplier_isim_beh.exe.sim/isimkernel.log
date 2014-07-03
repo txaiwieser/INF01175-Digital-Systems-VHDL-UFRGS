@@ -2,28 +2,29 @@ Command line:
    tb_matrix_multiplier_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49286
+     -socket  49293
 
-Thu Jul 03 00:05:34 2014
+Thu Jul 03 03:11:19 2014
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.09375 sec
 
  Current Memory Usage: 679.481 Meg
 
- Total Signals          : 274
- Total Nets             : 13535
- Total Signal Drivers   : 94
+ Total Signals          : 275
+ Total Nets             : 13488
+ Total Signal Drivers   : 95
  Total Blocks           : 22
  Total Primitive Blocks : 13
- Total Processes        : 61
+ Total Processes        : 62
  Total Traceable Variables  : 232
- Total Scalar Nets and Variables : 15209
-Total Line Count : 452
+ Total Scalar Nets and Variables : 15162
+Total Line Count : 453
+Total Line Count : 453
 
- Total Simulation Time: 0.09375 sec
+ Total Simulation Time: 7.17188 sec
 
- Current Memory Usage: 679.481 Meg
+ Current Memory Usage: 994.054 Meg
 
-Thu Jul 03 00:10:05 2014
+Thu Jul 03 03:12:43 2014
 

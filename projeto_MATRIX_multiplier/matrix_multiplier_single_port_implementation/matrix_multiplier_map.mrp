@@ -1,0 +1,2378 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'matrix_multiplier'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off
+-u -c 100 -o matrix_multiplier_map.ncd matrix_multiplier.ngd
+matrix_multiplier.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Thu Jul 03 03:40:28 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+Logic Distribution:
+    Number of Slices containing only related logic:       0 out of       0   0%
+    Number of Slices containing unrelated logic:          0 out of       0   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Number of bonded IOBs:                  2 out of      83    2%
+
+Average Fanout of Non-Clock Nets:                0.00
+
+Peak Memory Usage:  249 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:367 - The signal <M_CLOCK_BUFGP/IBUFG> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <M_RESET_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 920 block(s) removed
+1027 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "single_port_RAM/N0" is sourceless and has been removed.
+The signal "single_port_RAM/N1" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "BLOCK1/Madd_S_addsub0001C" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C1" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<1>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<1>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<1>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C1" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C11" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<2>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<2>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<2>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C10" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C101" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<11>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<11>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<11>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C11" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C111" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<12>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<12>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<12>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C12" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C121" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<13>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<13>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<13>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C2" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C21" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<3>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<3>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<3>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C3" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C31" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<4>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<4>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<4>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C4" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C41" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<5>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<5>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<5>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C5" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C51" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<6>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<6>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<6>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C6" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C61" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<7>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<7>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<7>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C7" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C71" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<8>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<8>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<8>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C8" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C81" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<9>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<9>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<9>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001C9" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001C91" (ROM) removed.
+  The signal "BLOCK1/S_mult0001<10>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<10>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0000<10>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001R" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001R1" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<0>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<0>" (MUX) removed.
+  The signal "BLOCK1/S_mult0002<0>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0001<0>" is unused and has been removed.
+  The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<0>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<0>" (ROM) removed.
+    The signal "BLOCK1/S_mult0000<0>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<10>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<10>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<9>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<9>" (MUX) removed.
+    The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<8>" is unused and has been removed.
+     Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<8>" (MUX) removed.
+      The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<7>" is unused and has been removed.
+       Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<7>" (MUX) removed.
+        The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<6>" is unused and has been removed.
+         Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<6>" (MUX) removed.
+          The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<5>" is unused and has been removed.
+           Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<5>" (MUX) removed.
+            The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<4>" is unused and has been removed.
+             Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<4>" (MUX) removed.
+              The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<3>" is unused and has been removed.
+               Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<3>" (MUX) removed.
+                The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<2>" is unused and has been removed.
+                 Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<2>" (MUX) removed.
+                  The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<1>" is unused and has been removed.
+                   Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<1>" (MUX) removed.
+                    The signal "N0" is unused and has been removed.
+                     Unused block "XST_GND" (ZERO) removed.
+                  The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<2>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<2>" (ROM) removed.
+                The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<3>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<3>" (ROM) removed.
+              The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<4>" is unused and has been
+removed.
+               Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<4>" (ROM) removed.
+            The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<5>" is unused and has been
+removed.
+             Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<5>" (ROM) removed.
+          The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<6>" is unused and has been
+removed.
+           Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<6>" (ROM) removed.
+        The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<7>" is unused and has been
+removed.
+         Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<7>" (ROM) removed.
+      The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<8>" is unused and has been
+removed.
+       Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<8>" (ROM) removed.
+    The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<9>" is unused and has been
+removed.
+     Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<9>" (ROM) removed.
+  The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<10>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<10>" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<11>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<11>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<11>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<11>" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<12>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<12>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<12>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<12>" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<13>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<13>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<13>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<13>" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0001_Madd_cy<14>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0001_Madd_cy<14>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<14>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<14>" (ROM) removed.
+    The signal "BLOCK1/S_mult0001<14>" is unused and has been removed.
+    The signal "BLOCK1/S_mult0000<14>" is unused and has been removed.
+    The signal "BLOCK1/S_mult0002<14>" is unused and has been removed.
+The signal "BLOCK1/Madd_S_addsub0001_Madd_lut<15>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<15>" (ROM) removed.
+  The signal "BLOCK1/S_mult0000<15>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0001<15>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0002<15>" is unused and has been removed.
+  The signal "N30" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_lut<15>_SW0" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0003C" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C1" (ROM) removed.
+  The signal "BLOCK1/S_addsub0001<1>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<1>" (XOR) removed.
+  The signal "BLOCK1/S_mult0003<1>" is unused and has been removed.
+  The signal "BLOCK1/Mmult_S_mult0004_Madd_110" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<1>" (XOR) removed.
+    The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<1>" is unused and has been
+removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<1>" (ROM) removed.
+      The signal "bk1s<0>" is unused and has been removed.
+       Unused block "bk1s_0" (LATCH) removed.
+        The signal "aux<0>" is unused and has been removed.
+         Unused block "aux_0" (LATCH) removed.
+          The signal "aux_mux0000<0>" is unused and has been removed.
+           Unused block "aux_mux0000<0>88" (ROM) removed.
+            The signal "PC/external_qtd_lida<3>" is unused and has been removed.
+             Unused block "PC/external_qtd_lida_3" (LATCH) removed.
+              The signal "PC/external_qtd_lida_mux0000<3>" is unused and has been removed.
+               Unused block "PC/external_qtd_lida_mux0000<3>" (ROM) removed.
+                The signal "PC/N13" is unused and has been removed.
+                 Unused block "PC/external_qtd_lida_mux0000<5>31" (ROM) removed.
+                  The signal "PC/six_counter<1>" is unused and has been removed.
+                   Unused block "PC/six_counter_1" (LATCH) removed.
+                    The signal "PC/six_counter_mux0000<1>" is unused and has been removed.
+                     Unused block "PC/six_counter_mux0000<1>1" (ROM) removed.
+                      The signal "PC/ESTADO_ATUAL<17>" is unused and has been removed.
+                       Unused block "PC/ESTADO_ATUAL_17" (FF) removed.
+                        The signal "M_CLOCK_BUFGP" is unused and has been removed.
+                         Unused block "M_CLOCK_BUFGP/BUFG" (CKBUF) removed.
+                        The signal "PC/ESTADO_ATUAL_18__or0000" is unused and has been removed.
+                         Unused block "PC/ESTADO_ATUAL_18__or00001" (ROM) removed.
+                          The signal "PC/N6" is unused and has been removed.
+                           Unused block "PC/ESTADO_ATUAL_mux0000<18>11" (ROM) removed.
+                            The signal "PC/internal_qtd_lida<4>" is unused and has been removed.
+                             Unused block "PC/internal_qtd_lida_4" (LATCH) removed.
+                              The signal "PC/internal_qtd_lida_mux0000<4>" is unused and has been removed.
+                               Unused block "PC/internal_qtd_lida_mux0000<4>1" (ROM) removed.
+                                The signal "PC/internal_qtd_lida<3>" is unused and has been removed.
+                                 Unused block "PC/internal_qtd_lida_3" (LATCH) removed.
+                                  The signal "PC/internal_qtd_lida_mux0000<3>" is unused and has been removed.
+                                   Unused block "PC/internal_qtd_lida_mux0000<3>1" (ROM) removed.
+                                  The signal "PC/six_counter_or0000" is unused and has been removed.
+                                   Unused block "PC/six_counter_or00001" (ROM) removed.
+                                    The signal "PC/ESTADO_ATUAL<0>" is unused and has been removed.
+                                     Unused block "PC/ESTADO_ATUAL_0" (FF) removed.
+                                      The signal "PC/ESTADO_ATUAL_mux0000<18>" is unused and has been removed.
+                                       Unused block "PC/ESTADO_ATUAL_mux0000<18>1" (ROM) removed.
+                                        The signal "PC/interna_done" is unused and has been removed.
+                                         Unused block "PC/interna_done" (LATCH) removed.
+                                          The signal "N1" is unused and has been removed.
+                                           Unused block "XST_VCC" (ONE) removed.
+                                          The signal "PC/interna_done_cmp_gt0000" is unused and has been removed.
+                                           Unused block "PC/interna_done_cmp_gt00001" (ROM) removed.
+                                            The signal "PC/internal_qtd_lida<5>" is unused and has been removed.
+                                             Unused block "PC/internal_qtd_lida_5" (LATCH) removed.
+                                              The signal "PC/internal_qtd_lida_mux0000<5>" is unused and has been removed.
+                                               Unused block "PC/internal_qtd_lida_mux0000<5>" (ROM) removed.
+                                            The signal "PC/internal_qtd_lida<2>" is unused and has been removed.
+                                             Unused block "PC/internal_qtd_lida_2" (LATCH) removed.
+                                              The signal "PC/internal_qtd_lida_mux0000<2>" is unused and has been removed.
+                                               Unused block "PC/internal_qtd_lida_mux0000<2>1" (ROM) removed.
+                                                The signal "PC/internal_qtd_lida<0>" is unused and has been removed.
+                                                 Unused block "PC/internal_qtd_lida_0" (LATCH) removed.
+*The signal "PC/internal_qtd_lida_mux0000<0>" is unused and has been removed.
+* Unused block "PC/internal_qtd_lida_mux0000<0>1" (ROM) removed.
+                                                The signal "PC/internal_qtd_lida<1>" is unused and has been removed.
+                                                 Unused block "PC/internal_qtd_lida_1" (LATCH) removed.
+*The signal "PC/internal_qtd_lida_mux0000<1>" is unused and has been removed.
+* Unused block "PC/internal_qtd_lida_mux0000<1>1" (ROM) removed.
+                                The signal "PC/N12" is unused and has been removed.
+                                 Unused block "PC/internal_qtd_lida_mux0000<3>21" (ROM) removed.
+                        The signal "PC/ESTADO_ATUAL_mux0000<1>" is unused and has been removed.
+                         Unused block "PC/ESTADO_ATUAL_mux0000<1>1" (ROM) removed.
+                          The signal "PC/ESTADO_ATUAL<16>" is unused and has been removed.
+                           Unused block "PC/ESTADO_ATUAL_16" (FF) removed.
+                            The signal "PC/ESTADO_ATUAL_mux0000<2>" is unused and has been removed.
+                             Unused block "PC/ESTADO_ATUAL_mux0000<2>1" (ROM) removed.
+                              The signal "PC/ESTADO_ATUAL<15>" is unused and has been removed.
+                               Unused block "PC/ESTADO_ATUAL_15" (FF) removed.
+                                The signal "PC/ESTADO_ATUAL_mux0000<3>" is unused and has been removed.
+                                 Unused block "PC/ESTADO_ATUAL_mux0000<3>1" (ROM) removed.
+                                  The signal "PC/ESTADO_ATUAL<14>" is unused and has been removed.
+                                   Unused block "PC/ESTADO_ATUAL_14" (FF) removed.
+                                    The signal "PC/ESTADO_ATUAL_mux0000<4>" is unused and has been removed.
+                                     Unused block "PC/ESTADO_ATUAL_mux0000<4>1" (ROM) removed.
+                                      The signal "PC/ESTADO_ATUAL<13>" is unused and has been removed.
+                                       Unused block "PC/ESTADO_ATUAL_13" (FF) removed.
+                                        The signal "PC/ESTADO_ATUAL_mux0000<5>" is unused and has been removed.
+                                         Unused block "PC/ESTADO_ATUAL_mux0000<5>1" (ROM) removed.
+                                          The signal "PC/ESTADO_ATUAL<12>" is unused and has been removed.
+                                           Unused block "PC/ESTADO_ATUAL_12" (FF) removed.
+                                            The signal "PC/ESTADO_ATUAL_mux0000<6>" is unused and has been removed.
+                                             Unused block "PC/ESTADO_ATUAL_mux0000<6>1" (ROM) removed.
+                                              The signal "PC/ESTADO_ATUAL<11>" is unused and has been removed.
+                                               Unused block "PC/ESTADO_ATUAL_11" (FF) removed.
+                                                The signal "PC/ESTADO_ATUAL_mux0000<7>" is unused and has been removed.
+                                                 Unused block "PC/ESTADO_ATUAL_mux0000<7>1" (ROM) removed.
+*The signal "PC/ESTADO_ATUAL<10>" is unused and has been removed.
+* Unused block "PC/ESTADO_ATUAL_10" (FF) removed.
+*  The signal "PC/ESTADO_ATUAL_mux0000<8>" is unused and has been removed.
+*   Unused block "PC/ESTADO_ATUAL_mux0000<8>1" (ROM) removed.
+*    The signal "PC/ESTADO_ATUAL<9>" is unused and has been removed.
+*     Unused block "PC/ESTADO_ATUAL_9" (FF) removed.
+*      The signal "PC/ESTADO_ATUAL_mux0000<9>" is unused and has been removed.
+*       Unused block "PC/ESTADO_ATUAL_mux0000<9>1" (ROM) removed.
+*        The signal "PC/ESTADO_ATUAL<8>" is unused and has been removed.
+*         Unused block "PC/ESTADO_ATUAL_8" (FF) removed.
+*          The signal "PC/ESTADO_ATUAL_mux0000<10>" is unused and has been removed.
+*           Unused block "PC/ESTADO_ATUAL_mux0000<10>1" (ROM) removed.
+*            The signal "PC/ESTADO_ATUAL<7>" is unused and has been removed.
+*             Unused block "PC/ESTADO_ATUAL_7" (FF) removed.
+*              The signal "PC/ESTADO_ATUAL_mux0000<11>" is unused and has been removed.
+*               Unused block "PC/ESTADO_ATUAL_mux0000<11>1" (ROM) removed.
+*                The signal "PC/ESTADO_ATUAL<6>" is unused and has been removed.
+*                 Unused block "PC/ESTADO_ATUAL_6" (FF) removed.
+*                  The signal "PC/ESTADO_ATUAL_mux0000<12>" is unused and has been removed.
+*                   Unused block "PC/ESTADO_ATUAL_mux0000<12>1" (ROM) removed.
+*                    The signal "PC/ESTADO_ATUAL<5>" is unused and has been removed.
+*                     Unused block "PC/ESTADO_ATUAL_5" (FF) removed.
+*                      The signal "PC/ESTADO_ATUAL_mux0000<13>" is unused and has been removed.
+*                       Unused block "PC/ESTADO_ATUAL_mux0000<13>1" (ROM) removed.
+*                        The signal "PC/ESTADO_ATUAL<4>" is unused and has been removed.
+*                         Unused block "PC/ESTADO_ATUAL_4" (FF) removed.
+*                          The signal "PC/ESTADO_ATUAL_mux0000<14>" is unused and has been removed.
+*                           Unused block "PC/ESTADO_ATUAL_mux0000<14>1" (ROM) removed.
+*                            The signal "PC/ESTADO_ATUAL<3>" is unused and has been removed.
+*                             Unused block "PC/ESTADO_ATUAL_3" (FF) removed.
+*                              The signal "PC/ESTADO_ATUAL_mux0000<15>" is unused and has been removed.
+*                               Unused block "PC/ESTADO_ATUAL_mux0000<15>1" (ROM) removed.
+*                                The signal "PC/ESTADO_ATUAL<2>" is unused and has been removed.
+*                                 Unused block "PC/ESTADO_ATUAL_2" (FF) removed.
+*                                  The signal "PC/ESTADO_ATUAL_mux0000<16>" is unused and has been removed.
+*                                   Unused block "PC/ESTADO_ATUAL_mux0000<16>1" (ROM) removed.
+*                                    The signal "PC/ESTADO_ATUAL<1>" is unused and has been removed.
+*                                     Unused block "PC/ESTADO_ATUAL_1" (FF) removed.
+*                                      The signal "PC/ESTADO_ATUAL_mux0000<17>" is unused and has been removed.
+*                                       Unused block "PC/ESTADO_ATUAL_mux0000<17>1" (ROM) removed.
+                                      The signal "PC/ESTADO_ATUAL<18>" is unused and has been removed.
+                                       Unused block "PC/ESTADO_ATUAL_18" (FF) removed.
+                                        The signal "PC/ESTADO_ATUAL_mux0000<0>" is unused and has been removed.
+                                         Unused block "PC/ESTADO_ATUAL_mux0000<0>" (ROM) removed.
+                                          The signal "PC/six_counter<2>" is unused and has been removed.
+                                           Unused block "PC/six_counter_2" (LATCH) removed.
+                                            The signal "PC/six_counter_mux0000<2>" is unused and has been removed.
+                                             Unused block "PC/six_counter_mux0000<2>1" (ROM) removed.
+                                              The signal "PC/six_counter<0>" is unused and has been removed.
+                                               Unused block "PC/six_counter_0" (LATCH) removed.
+                                                The signal "PC/six_counter_mux0000<0>" is unused and has been removed.
+                                                 Unused block "PC/six_counter_mux0000<0>1" (ROM) removed.
+                                          The signal "N26" is unused and has been removed.
+                                           Unused block "PC/ESTADO_ATUAL_mux0000<0>_SW0_SW0" (ROM) removed.
+                The signal "PC/external_qtd_lida<2>" is unused and has been removed.
+                 Unused block "PC/external_qtd_lida_2" (LATCH) removed.
+                  The signal "PC/external_qtd_lida_mux0000<2>" is unused and has been removed.
+                   Unused block "PC/external_qtd_lida_mux0000<2>1" (ROM) removed.
+                    The signal "PC/external_qtd_lida<0>" is unused and has been removed.
+                     Unused block "PC/external_qtd_lida_0" (LATCH) removed.
+                      The signal "PC/external_qtd_lida_mux0000<0>" is unused and has been removed.
+                       Unused block "PC/external_qtd_lida_mux0000<0>1" (ROM) removed.
+                      The signal "PC/external_qtd_lida_not0001" is unused and has been removed.
+                       Unused block "PC/external_qtd_lida_not00011" (ROM) removed.
+                    The signal "PC/external_qtd_lida<1>" is unused and has been removed.
+                     Unused block "PC/external_qtd_lida_1" (LATCH) removed.
+                      The signal "PC/external_qtd_lida_mux0000<1>" is unused and has been removed.
+                       Unused block "PC/external_qtd_lida_mux0000<1>1" (ROM) removed.
+            The signal "PC/external_qtd_lida<4>" is unused and has been removed.
+             Unused block "PC/external_qtd_lida_4" (LATCH) removed.
+              The signal "PC/external_qtd_lida_mux0000<4>" is unused and has been removed.
+               Unused block "PC/external_qtd_lida_mux0000<4>1" (ROM) removed.
+            The signal "PC/external_qtd_lida<5>" is unused and has been removed.
+             Unused block "PC/external_qtd_lida_5" (LATCH) removed.
+              The signal "PC/external_qtd_lida_mux0000<5>" is unused and has been removed.
+               Unused block "PC/external_qtd_lida_mux0000<5>" (ROM) removed.
+            The signal "N48" is unused and has been removed.
+             Unused block "aux_mux0000<0>88_SW0" (ROM) removed.
+              The signal "aux_mux0000<0>70" is unused and has been removed.
+               Unused block "aux_mux0000<0>70" (ROM) removed.
+                The signal "mmmm<24>" is unused and has been removed.
+                The signal "aux_mux0000<0>65" is unused and has been removed.
+                 Unused block "aux_mux0000<7>65" (ROM) removed.
+                The signal "mmmm<16>" is unused and has been removed.
+              The signal "aux_mux0000<0>12" is unused and has been removed.
+               Unused block "aux_mux0000<0>12" (ROM) removed.
+                The signal "mmmm<32>" is unused and has been removed.
+                The signal "mmmm<0>" is unused and has been removed.
+              The signal "aux_mux0000<0>27" is unused and has been removed.
+               Unused block "aux_mux0000<0>27" (ROM) removed.
+                The signal "mmmm<40>" is unused and has been removed.
+                The signal "mmmm<8>" is unused and has been removed.
+          The signal "aux_not0001" is unused and has been removed.
+           Unused block "aux_not00011_f5" (MUX) removed.
+            The signal "aux_not00011" is unused and has been removed.
+             Unused block "aux_not000111" (ROM) removed.
+        The signal "PC/REGISTER_WRITE_ENABLE" is unused and has been removed.
+         Unused block "PC/REGISTER_WRITE_ENABLE_BUFG" (CKBUF) removed.
+          The signal "PC/REGISTER_WRITE_ENABLE1" is unused and has been removed.
+           Unused block "PC/REGISTER_WRITE_ENABLE" (LATCH) removed.
+            The signal "PC/REGISTER_WRITE_ENABLE_mux0000" is unused and has been removed.
+             Unused block "PC/REGISTER_WRITE_ENABLE_mux0000" (ROM) removed.
+              The signal "N14" is unused and has been removed.
+               Unused block "PC/REGISTER_WRITE_ENABLE_mux0000_SW0" (ROM) removed.
+            The signal "PC/REGISTER_WRITE_ENABLE_or0000" is unused and has been removed.
+             Unused block "PC/REGISTER_WRITE_ENABLE_or000016" (ROM) removed.
+              The signal "PC/REGISTER_WRITE_ENABLE_or00004" is unused and has been removed.
+               Unused block "PC/REGISTER_WRITE_ENABLE_or00004" (ROM) removed.
+              The signal "PC/REGISTER_WRITE_ENABLE_or000011" is unused and has been removed.
+               Unused block "PC/REGISTER_WRITE_ENABLE_or0000111" (ROM) removed.
+                The signal "N32" is unused and has been removed.
+                 Unused block "PC/REGISTER_WRITE_ENABLE_or0000111_SW0" (ROM) removed.
+                  The signal "PC/MEM_RESULT_SAVE_POSITION_or0000" is unused and has been removed.
+                   Unused block "PC/MEM_RESULT_SAVE_POSITION_or0000" (ROM) removed.
+                    The signal "N10" is unused and has been removed.
+                     Unused block "PC/MEM_RESULT_SAVE_POSITION_or0000_SW0" (ROM) removed.
+                      The signal "PC/N121" is unused and has been removed.
+                       Unused block "PC/REGISTER_WRITE_ENABLE_or000011" (ROM) removed.
+        The signal "bk1s_cmp_eq0000" is unused and has been removed.
+         Unused block "bk1s_cmp_eq00001" (ROM) removed.
+          The signal "PC/MEM_RESULT_SAVE_POSITION<1>" is unused and has been removed.
+           Unused block "PC/MEM_RESULT_SAVE_POSITION_1" (LATCH) removed.
+            The signal "PC/MEM_RESULT_SAVE_POSITION_mux0000<1>" is unused and has been
+removed.
+             Unused block "PC/MEM_RESULT_SAVE_POSITION_mux0000<1>1" (ROM) removed.
+          The signal "PC/MEM_RESULT_SAVE_POSITION<2>" is unused and has been removed.
+           Unused block "PC/MEM_RESULT_SAVE_POSITION_2" (LATCH) removed.
+            The signal "PC/MEM_RESULT_SAVE_POSITION_mux0000<2>" is unused and has been
+removed.
+             Unused block "PC/MEM_RESULT_SAVE_POSITION_mux0000<2>1" (ROM) removed.
+          The signal "PC/MEM_RESULT_SAVE_POSITION<0>" is unused and has been removed.
+           Unused block "PC/MEM_RESULT_SAVE_POSITION_0" (LATCH) removed.
+            The signal "PC/MEM_RESULT_SAVE_POSITION_mux0000<0>" is unused and has been
+removed.
+             Unused block "PC/MEM_RESULT_SAVE_POSITION_mux0000<0>1" (ROM) removed.
+      The signal "bk1s<1>" is unused and has been removed.
+       Unused block "bk1s_1" (LATCH) removed.
+        The signal "aux<1>" is unused and has been removed.
+         Unused block "aux_1" (LATCH) removed.
+          The signal "aux_mux0000<1>" is unused and has been removed.
+           Unused block "aux_mux0000<1>88" (ROM) removed.
+            The signal "N46" is unused and has been removed.
+             Unused block "aux_mux0000<1>88_SW0" (ROM) removed.
+              The signal "aux_mux0000<1>70" is unused and has been removed.
+               Unused block "aux_mux0000<1>70" (ROM) removed.
+                The signal "mmmm<25>" is unused and has been removed.
+                The signal "mmmm<17>" is unused and has been removed.
+              The signal "aux_mux0000<1>12" is unused and has been removed.
+               Unused block "aux_mux0000<1>12" (ROM) removed.
+                The signal "mmmm<33>" is unused and has been removed.
+                The signal "mmmm<1>" is unused and has been removed.
+              The signal "aux_mux0000<1>27" is unused and has been removed.
+               Unused block "aux_mux0000<1>27" (ROM) removed.
+                The signal "mmmm<41>" is unused and has been removed.
+                The signal "mmmm<9>" is unused and has been removed.
+      The signal "ax5s<0>" is unused and has been removed.
+       Unused block "ax5s_0" (LATCH) removed.
+        The signal "ax1s_0_0_not0000" is unused and has been removed.
+         Unused block "ax1s_0_0_not00001" (ROM) removed.
+      The signal "ax5s<1>" is unused and has been removed.
+       Unused block "ax5s_1" (LATCH) removed.
+The signal "BLOCK1/Madd_S_addsub0003C1" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C11" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<2>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<2>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<2>" (XOR) removed.
+    The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<2>" is unused and has been
+removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<2>" (ROM) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd_25" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<2>" (XOR) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<1>" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<1>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_ax5<0>_x_bk1<1>_mand1" is unused and has
+been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_ax5<0>_x_bk1<1>_mand" (AND) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<2>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<2>" (ROM) removed.
+          The signal "ax5s<2>" is unused and has been removed.
+           Unused block "ax5s_2" (LATCH) removed.
+            The signal "mmmm<10>" is unused and has been removed.
+      The signal "bk1s<2>" is unused and has been removed.
+       Unused block "bk1s_2" (LATCH) removed.
+        The signal "aux<2>" is unused and has been removed.
+         Unused block "aux_2" (LATCH) removed.
+          The signal "aux_mux0000<2>" is unused and has been removed.
+           Unused block "aux_mux0000<2>88" (ROM) removed.
+            The signal "N44" is unused and has been removed.
+             Unused block "aux_mux0000<2>88_SW0" (ROM) removed.
+              The signal "aux_mux0000<2>70" is unused and has been removed.
+               Unused block "aux_mux0000<2>70" (ROM) removed.
+                The signal "mmmm<26>" is unused and has been removed.
+                The signal "mmmm<18>" is unused and has been removed.
+              The signal "aux_mux0000<2>12" is unused and has been removed.
+               Unused block "aux_mux0000<2>12" (ROM) removed.
+                The signal "mmmm<34>" is unused and has been removed.
+                The signal "mmmm<2>" is unused and has been removed.
+              The signal "aux_mux0000<2>27" is unused and has been removed.
+               Unused block "aux_mux0000<2>27" (ROM) removed.
+                The signal "mmmm<42>" is unused and has been removed.
+  The signal "BLOCK1/S_addsub0001<2>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<2>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C10" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C101" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<11>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<11>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<11>" (XOR) removed.
+    The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<10>" is unused and has been
+removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<10>" (MUX) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<9>" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<9>" (MUX) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<8>" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<8>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<7>" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<7>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<6>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<6>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<5>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<5>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<4>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<4>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<3>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<3>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<2>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<2>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd_35" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<3>" (XOR) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<2>" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<2>" (MUX) removed.
+                        The signal "BLOCK1/Mmult_S_mult0004_ax5<1>_x_bk1<1>_mand1" is unused and has
+been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0004_ax5<1>_x_bk1<1>_mand" (AND) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<3>" is unused and has been
+removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<3>" (ROM) removed.
+                        The signal "ax5s<3>" is unused and has been removed.
+                         Unused block "ax5s_3" (LATCH) removed.
+                          The signal "mmmm<11>" is unused and has been removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<3>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<3>" (ROM) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_Madd_33" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_Madd3_xor<3>" (XOR) removed.
+                        The signal "BLOCK1/Mmult_S_mult0004_Madd3_lut<3>" is unused and has been
+removed.
+                         Unused block "BLOCK1/Mmult_S_mult0004_Madd3_lut<3>" (ROM) removed.
+                          The signal "bk1s<3>" is unused and has been removed.
+                           Unused block "bk1s_3" (LATCH) removed.
+                            The signal "aux<3>" is unused and has been removed.
+                             Unused block "aux_3" (LATCH) removed.
+                              The signal "aux_mux0000<3>" is unused and has been removed.
+                               Unused block "aux_mux0000<3>88" (ROM) removed.
+                                The signal "N42" is unused and has been removed.
+                                 Unused block "aux_mux0000<3>88_SW0" (ROM) removed.
+                                  The signal "aux_mux0000<3>70" is unused and has been removed.
+                                   Unused block "aux_mux0000<3>70" (ROM) removed.
+                                    The signal "mmmm<27>" is unused and has been removed.
+                                    The signal "mmmm<19>" is unused and has been removed.
+                                  The signal "aux_mux0000<3>12" is unused and has been removed.
+                                   Unused block "aux_mux0000<3>12" (ROM) removed.
+                                    The signal "mmmm<35>" is unused and has been removed.
+                                    The signal "mmmm<3>" is unused and has been removed.
+                                  The signal "aux_mux0000<3>27" is unused and has been removed.
+                                   Unused block "aux_mux0000<3>27" (ROM) removed.
+                                    The signal "mmmm<43>" is unused and has been removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd_45" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<4>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<3>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<3>" (MUX) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_ax5<2>_x_bk1<1>_mand1" is unused and has
+been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_ax5<2>_x_bk1<1>_mand" (AND) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<4>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<4>" (ROM) removed.
+                      The signal "ax5s<4>" is unused and has been removed.
+                       Unused block "ax5s_4" (LATCH) removed.
+                        The signal "mmmm<12>" is unused and has been removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<4>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<4>" (ROM) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd_44" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd4_xor<4>" (XOR) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_Madd4_lut<4>" is unused and has been
+removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_Madd4_lut<4>" (ROM) removed.
+                        The signal "BLOCK1/Mmult_S_mult0004_Madd_43" is unused and has been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0004_Madd3_xor<4>" (XOR) removed.
+                          The signal "BLOCK1/Mmult_S_mult0004_Madd3_cy<3>" is unused and has been removed.
+                           Unused block "BLOCK1/Mmult_S_mult0004_Madd3_cy<3>" (MUX) removed.
+                            The signal "BLOCK1/Mmult_S_mult0004_ax5<0>_x_bk1<3>_mand1" is unused and has
+been removed.
+                             Unused block "BLOCK1/Mmult_S_mult0004_ax5<0>_x_bk1<3>_mand" (AND) removed.
+                          The signal "BLOCK1/Mmult_S_mult0004_Madd3_lut<4>" is unused and has been
+removed.
+                           Unused block "BLOCK1/Mmult_S_mult0004_Madd3_lut<4>" (ROM) removed.
+                            The signal "bk1s<4>" is unused and has been removed.
+                             Unused block "bk1s_4" (LATCH) removed.
+                              The signal "aux<4>" is unused and has been removed.
+                               Unused block "aux_4" (LATCH) removed.
+                                The signal "aux_mux0000<4>" is unused and has been removed.
+                                 Unused block "aux_mux0000<4>88" (ROM) removed.
+                                  The signal "N40" is unused and has been removed.
+                                   Unused block "aux_mux0000<4>88_SW0" (ROM) removed.
+                                    The signal "aux_mux0000<4>70" is unused and has been removed.
+                                     Unused block "aux_mux0000<4>70" (ROM) removed.
+                                      The signal "mmmm<28>" is unused and has been removed.
+                                      The signal "mmmm<20>" is unused and has been removed.
+                                    The signal "aux_mux0000<4>12" is unused and has been removed.
+                                     Unused block "aux_mux0000<4>12" (ROM) removed.
+                                      The signal "mmmm<36>" is unused and has been removed.
+                                      The signal "mmmm<4>" is unused and has been removed.
+                                    The signal "aux_mux0000<4>27" is unused and has been removed.
+                                     Unused block "aux_mux0000<4>27" (ROM) removed.
+                                      The signal "mmmm<44>" is unused and has been removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd_55" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<5>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<4>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<4>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_ax5<3>_x_bk1<1>_mand1" is unused and has
+been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_ax5<3>_x_bk1<1>_mand" (AND) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<5>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<5>" (ROM) removed.
+                    The signal "ax5s<5>" is unused and has been removed.
+                     Unused block "ax5s_5" (LATCH) removed.
+                      The signal "mmmm<13>" is unused and has been removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<5>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<5>" (ROM) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd_54" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd4_xor<5>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<4>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<4>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd4_lut<5>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd4_lut<5>" (ROM) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_Madd_52" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_Madd2_xor<3>" (XOR) removed.
+                        The signal "BLOCK1/Mmult_S_mult0004_Madd2_lut<3>" is unused and has been
+removed.
+                         Unused block "BLOCK1/Mmult_S_mult0004_Madd2_lut<3>" (ROM) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_Madd_53" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_Madd3_xor<5>" (XOR) removed.
+                        The signal "BLOCK1/Mmult_S_mult0004_Madd3_cy<4>" is unused and has been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0004_Madd3_cy<4>" (MUX) removed.
+                          The signal "BLOCK1/Mmult_S_mult0004_ax5<0>_x_bk1<4>_mand1" is unused and has
+been removed.
+                           Unused block "BLOCK1/Mmult_S_mult0004_ax5<0>_x_bk1<4>_mand" (AND) removed.
+                        The signal "BLOCK1/Mmult_S_mult0004_Madd3_lut<5>" is unused and has been
+removed.
+                         Unused block "BLOCK1/Mmult_S_mult0004_Madd3_lut<5>" (ROM) removed.
+                          The signal "bk1s<5>" is unused and has been removed.
+                           Unused block "bk1s_5" (LATCH) removed.
+                            The signal "aux<5>" is unused and has been removed.
+                             Unused block "aux_5" (LATCH) removed.
+                              The signal "aux_mux0000<5>" is unused and has been removed.
+                               Unused block "aux_mux0000<5>88" (ROM) removed.
+                                The signal "N38" is unused and has been removed.
+                                 Unused block "aux_mux0000<5>88_SW0" (ROM) removed.
+                                  The signal "aux_mux0000<5>70" is unused and has been removed.
+                                   Unused block "aux_mux0000<5>70" (ROM) removed.
+                                    The signal "mmmm<29>" is unused and has been removed.
+                                    The signal "mmmm<21>" is unused and has been removed.
+                                  The signal "aux_mux0000<5>12" is unused and has been removed.
+                                   Unused block "aux_mux0000<5>12" (ROM) removed.
+                                    The signal "mmmm<37>" is unused and has been removed.
+                                    The signal "mmmm<5>" is unused and has been removed.
+                                  The signal "aux_mux0000<5>27" is unused and has been removed.
+                                   Unused block "aux_mux0000<5>27" (ROM) removed.
+                                    The signal "mmmm<45>" is unused and has been removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd_65" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<6>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<5>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<5>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_ax5<4>_x_bk1<1>_mand1" is unused and has
+been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_ax5<4>_x_bk1<1>_mand" (AND) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<6>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<6>" (ROM) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd_61" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd1_xor<6>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd1_lut<6>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd1_lut<6>" (ROM) removed.
+                      The signal "bk1s<6>" is unused and has been removed.
+                       Unused block "bk1s_6" (LATCH) removed.
+                        The signal "aux<6>" is unused and has been removed.
+                         Unused block "aux_6" (LATCH) removed.
+                          The signal "aux_mux0000<6>" is unused and has been removed.
+                           Unused block "aux_mux0000<6>88" (ROM) removed.
+                            The signal "N36" is unused and has been removed.
+                             Unused block "aux_mux0000<6>88_SW0" (ROM) removed.
+                              The signal "aux_mux0000<6>70" is unused and has been removed.
+                               Unused block "aux_mux0000<6>70" (ROM) removed.
+                                The signal "mmmm<30>" is unused and has been removed.
+                                The signal "mmmm<22>" is unused and has been removed.
+                              The signal "aux_mux0000<6>12" is unused and has been removed.
+                               Unused block "aux_mux0000<6>12" (ROM) removed.
+                                The signal "mmmm<38>" is unused and has been removed.
+                                The signal "mmmm<6>" is unused and has been removed.
+                              The signal "aux_mux0000<6>27" is unused and has been removed.
+                               Unused block "aux_mux0000<6>27" (ROM) removed.
+                                The signal "mmmm<46>" is unused and has been removed.
+                                The signal "mmmm<14>" is unused and has been removed.
+                  The signal "ax5s<6>" is unused and has been removed.
+                   Unused block "ax5s_6" (LATCH) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<6>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<6>" (ROM) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd_64" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd4_xor<6>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<5>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<5>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd4_lut<6>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd4_lut<6>" (ROM) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd_62" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd2_xor<4>" (XOR) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_Madd2_cy<3>" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_Madd2_cy<3>" (MUX) removed.
+                        The signal "BLOCK1/Mmult_S_mult0004_ax5<3>_x_bk1<2>_mand1" is unused and has
+been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0004_ax5<3>_x_bk1<2>_mand" (AND) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_Madd2_lut<4>" is unused and has been
+removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_Madd2_lut<4>" (ROM) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd_63" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd3_xor<6>" (XOR) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_Madd3_cy<5>" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_Madd3_cy<5>" (MUX) removed.
+                        The signal "BLOCK1/Mmult_S_mult0004_ax5<1>_x_bk1<4>_mand1" is unused and has
+been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0004_ax5<1>_x_bk1<4>_mand" (AND) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_Madd3_lut<6>" is unused and has been
+removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_Madd3_lut<6>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_75" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<7>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<6>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<6>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<7>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<7>" (ROM) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd_71" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd1_xor<7>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd1_cy<6>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd1_cy<6>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_ax5<5>_x_bk1<1>_mand1" is unused and has
+been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_ax5<5>_x_bk1<1>_mand" (AND) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd1_lut<7>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd1_lut<7>" (ROM) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd_7" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd_xor<7>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd_lut<7>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd_lut<7>" (ROM) removed.
+                    The signal "bk1s<7>" is unused and has been removed.
+                     Unused block "bk1s_7" (LATCH) removed.
+                      The signal "aux<7>" is unused and has been removed.
+                       Unused block "aux_7" (LATCH) removed.
+                        The signal "aux_mux0000<7>" is unused and has been removed.
+                         Unused block "aux_mux0000<7>88" (ROM) removed.
+                          The signal "N34" is unused and has been removed.
+                           Unused block "aux_mux0000<7>88_SW0" (ROM) removed.
+                            The signal "aux_mux0000<7>70" is unused and has been removed.
+                             Unused block "aux_mux0000<7>70" (ROM) removed.
+                              The signal "mmmm<31>" is unused and has been removed.
+                              The signal "mmmm<23>" is unused and has been removed.
+                            The signal "aux_mux0000<7>12" is unused and has been removed.
+                             Unused block "aux_mux0000<7>12" (ROM) removed.
+                              The signal "mmmm<39>" is unused and has been removed.
+                              The signal "mmmm<7>" is unused and has been removed.
+                            The signal "aux_mux0000<7>27" is unused and has been removed.
+                             Unused block "aux_mux0000<7>27" (ROM) removed.
+                              The signal "mmmm<47>" is unused and has been removed.
+                              The signal "mmmm<15>" is unused and has been removed.
+                    The signal "ax5s<7>" is unused and has been removed.
+                     Unused block "ax5s_7" (LATCH) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<7>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<7>" (ROM) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd_74" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd4_xor<7>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<6>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<6>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd4_lut<7>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd4_lut<7>" (ROM) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd_72" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd2_xor<5>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd2_cy<4>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd2_cy<4>" (MUX) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_ax5<4>_x_bk1<2>_mand1" is unused and has
+been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_ax5<4>_x_bk1<2>_mand" (AND) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd2_lut<5>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd2_lut<5>" (ROM) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd_73" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd3_xor<7>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd3_cy<6>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd3_cy<6>" (MUX) removed.
+                      The signal "BLOCK1/Mmult_S_mult0004_ax5<2>_x_bk1<4>_mand1" is unused and has
+been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0004_ax5<2>_x_bk1<4>_mand" (AND) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_Madd3_lut<7>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_Madd3_lut<7>" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_85" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<8>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<7>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<7>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<8>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<8>" (ROM) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd_81" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd1_xor<8>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd1_cy<7>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd1_cy<7>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_ax5<6>_x_bk1<1>_mand1" is unused and has
+been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_ax5<6>_x_bk1<1>_mand" (AND) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd1_lut<8>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd1_lut<8>" (ROM) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd_8" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd_xor<8>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd_cy<7>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd_cy<7>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<0>_mand1" is unused and has
+been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<0>_mand" (AND) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_ax5<1>_x_bk1<7>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_ax5<1>_x_bk1<7>1" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<8>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<8>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_84" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd4_xor<8>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<7>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<7>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd4_lut<8>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd4_lut<8>" (ROM) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd_82" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd2_xor<6>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd2_cy<5>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd2_cy<5>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_ax5<5>_x_bk1<2>_mand1" is unused and has
+been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_ax5<5>_x_bk1<2>_mand" (AND) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd2_lut<6>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd2_lut<6>" (ROM) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd_83" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd3_xor<8>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd3_cy<7>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd3_cy<7>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0004_ax5<3>_x_bk1<4>_mand1" is unused and has
+been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0004_ax5<3>_x_bk1<4>_mand" (AND) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_Madd3_lut<8>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_Madd3_lut<8>" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd_95" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<9>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<8>" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<8>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<9>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<9>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_91" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd1_xor<9>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd1_cy<8>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd1_cy<8>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<1>_mand1" is unused and has
+been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<1>_mand" (AND) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_ax5<3>_x_bk1<6>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_ax5<3>_x_bk1<6>1" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_9" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd_xor<9>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd_cy<8>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd_cy<8>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_ax5<2>_x_bk1<7>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_ax5<2>_x_bk1<7>1" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<9>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<9>" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_94" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd4_xor<9>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<8>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<8>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd4_lut<9>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd4_lut<9>" (ROM) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd_92" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd2_xor<7>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd2_cy<6>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd2_cy<6>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_ax5<6>_x_bk1<2>_mand1" is unused and has
+been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_ax5<6>_x_bk1<2>_mand" (AND) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd2_lut<7>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd2_lut<7>" (ROM) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd_93" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd3_xor<9>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd3_cy<8>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd3_cy<8>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0004_ax5<4>_x_bk1<4>_mand1" is unused and has
+been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0004_ax5<4>_x_bk1<4>_mand" (AND) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_Madd3_lut<9>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_Madd3_lut<9>" (ROM) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd_105" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<10>" (XOR) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<9>" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<9>" (MUX) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<10>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<10>" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_101" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd1_xor<10>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd1_cy<9>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd1_cy<9>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_ax5<4>_x_bk1<6>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_ax5<4>_x_bk1<6>1" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_10" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd_xor<10>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_cy<9>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd_cy<9>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_ax5<3>_x_bk1<7>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_ax5<3>_x_bk1<7>1" (ROM) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<10>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<10>" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd_104" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd4_xor<10>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<9>" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<9>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd4_lut<10>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd4_lut<10>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_102" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd2_xor<8>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd2_cy<7>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd2_cy<7>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<2>_mand1" is unused and has
+been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<2>_mand" (AND) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<3>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<3>1" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_103" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd3_xor<10>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd3_cy<9>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd3_cy<9>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0004_ax5<5>_x_bk1<4>_mand1" is unused and has
+been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0004_ax5<5>_x_bk1<4>_mand" (AND) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd3_lut<10>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd3_lut<10>" (ROM) removed.
+    The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<11>" is unused and has been
+removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<11>" (ROM) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd_115" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<11>" (XOR) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<10>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<10>" (MUX) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<11>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<11>" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_111" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd1_xor<11>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd1_cy<10>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd1_cy<10>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_ax5<5>_x_bk1<6>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_ax5<5>_x_bk1<6>1" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_11" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd_xor<11>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_cy<10>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd_cy<10>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_ax5<4>_x_bk1<7>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_ax5<4>_x_bk1<7>1" (ROM) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd_114" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd4_xor<11>" (XOR) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<10>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<10>" (MUX) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd4_lut<11>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd4_lut<11>" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd2_cy<8>" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd2_cy<8>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_113" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd3_xor<11>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd3_cy<10>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd3_cy<10>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_ax5<6>_x_bk1<4>_mand1" is unused and has
+been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_ax5<6>_x_bk1<4>_mand" (AND) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd3_lut<11>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd3_lut<11>" (ROM) removed.
+  The signal "BLOCK1/S_addsub0001<11>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<11>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C11" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C111" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<12>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<12>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<12>" (XOR) removed.
+    The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<11>" is unused and has been
+removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<11>" (MUX) removed.
+    The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<12>" is unused and has been
+removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<12>" (ROM) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd_125" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<12>" (XOR) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<11>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<11>" (MUX) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<12>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<12>" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_121" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd1_xor<12>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd1_cy<11>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd1_cy<11>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_ax5<6>_x_bk1<6>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_ax5<6>_x_bk1<6>1" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_12" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd_xor<12>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_cy<11>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd_cy<11>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_ax5<5>_x_bk1<7>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_ax5<5>_x_bk1<7>1" (ROM) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd_124" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd4_xor<12>" (XOR) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<11>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<11>" (MUX) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<12>_rt" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<12>_rt" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_123" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd3_xor<12>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd3_cy<11>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd3_cy<11>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<4>_mand1" is unused and has
+been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<4>_mand" (AND) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<5>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<5>1" (ROM) removed.
+  The signal "BLOCK1/S_addsub0001<12>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<12>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C12" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C121" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<13>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<13>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<13>" (XOR) removed.
+    The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<12>" is unused and has been
+removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<12>" (MUX) removed.
+    The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<13>" is unused and has been
+removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<13>" (ROM) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd_134" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<13>" (XOR) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<12>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<12>" (MUX) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<13>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<13>" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_131" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd1_xor<13>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd1_cy<12>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd1_cy<12>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<6>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<6>1" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd_13" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd_xor<13>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_cy<12>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd_cy<12>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_ax5<6>_x_bk1<7>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_ax5<6>_x_bk1<7>1" (ROM) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd_133" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd4_xor<13>" (XOR) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<12>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<12>" (MUX) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<13>_rt" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<13>_rt" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd3_cy<12>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd3_cy<12>" (MUX) removed.
+  The signal "BLOCK1/S_addsub0001<13>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<13>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C2" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C21" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<3>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<3>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<3>" (XOR) removed.
+  The signal "BLOCK1/S_addsub0001<3>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<3>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C3" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C31" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<4>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<4>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<4>" (XOR) removed.
+  The signal "BLOCK1/S_addsub0001<4>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<4>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C4" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C41" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<5>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<5>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<5>" (XOR) removed.
+  The signal "BLOCK1/S_addsub0001<5>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<5>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C5" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C51" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<6>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<6>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<6>" (XOR) removed.
+  The signal "BLOCK1/S_addsub0001<6>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<6>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C6" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C61" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<7>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<7>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<7>" (XOR) removed.
+  The signal "BLOCK1/S_addsub0001<7>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<7>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C7" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C71" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<8>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<8>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<8>" (XOR) removed.
+  The signal "BLOCK1/S_addsub0001<8>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<8>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C8" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C81" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<9>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<9>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<9>" (XOR) removed.
+  The signal "BLOCK1/S_addsub0001<9>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<9>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003C9" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003C91" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<10>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<10>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<10>" (XOR) removed.
+  The signal "BLOCK1/S_addsub0001<10>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<10>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003R" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003R1" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<0>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<0>" (MUX) removed.
+  The signal "BLOCK1/Mmult_S_mult0004_ax5<0>_x_bk1<0>" is unused and has been
+removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_ax5<0>_x_bk1<0>1" (ROM) removed.
+  The signal "BLOCK1/S_mult0003<0>" is unused and has been removed.
+  The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<0>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<0>" (ROM) removed.
+    The signal "BLOCK1/S_addsub0001<0>" is unused and has been removed.
+     Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<0>" (XOR) removed.
+The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<10>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<10>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<9>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<9>" (MUX) removed.
+    The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<8>" is unused and has been removed.
+     Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<8>" (MUX) removed.
+      The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<7>" is unused and has been removed.
+       Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<7>" (MUX) removed.
+        The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<6>" is unused and has been removed.
+         Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<6>" (MUX) removed.
+          The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<5>" is unused and has been removed.
+           Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<5>" (MUX) removed.
+            The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<4>" is unused and has been removed.
+             Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<4>" (MUX) removed.
+              The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<3>" is unused and has been removed.
+               Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<3>" (MUX) removed.
+                The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<2>" is unused and has been removed.
+                 Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<2>" (MUX) removed.
+                  The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<1>" is unused and has been removed.
+                   Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<1>" (MUX) removed.
+                  The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<2>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<2>" (ROM) removed.
+                The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<3>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<3>" (ROM) removed.
+              The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<4>" is unused and has been
+removed.
+               Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<4>" (ROM) removed.
+            The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<5>" is unused and has been
+removed.
+             Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<5>" (ROM) removed.
+          The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<6>" is unused and has been
+removed.
+           Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<6>" (ROM) removed.
+        The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<7>" is unused and has been
+removed.
+         Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<7>" (ROM) removed.
+      The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<8>" is unused and has been
+removed.
+       Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<8>" (ROM) removed.
+    The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<9>" is unused and has been
+removed.
+     Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<9>" (ROM) removed.
+  The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<10>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<10>" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<11>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<11>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<11>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<11>" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<12>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<12>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<12>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<12>" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<13>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<13>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<13>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<13>" (ROM) removed.
+The signal "BLOCK1/Madd_S_addsub0003_Madd_cy<14>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0003_Madd_cy<14>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<14>" is unused and has been
+removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<14>" (ROM) removed.
+    The signal "BLOCK1/S_mult0003<14>" is unused and has been removed.
+    The signal "BLOCK1/S_addsub0001<14>" is unused and has been removed.
+     Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<14>" (XOR) removed.
+    The signal "BLOCK1/S_mult0004<14>" is unused and has been removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<14>" (XOR) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<13>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<13>" (MUX) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd6_lut<14>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd6_lut<14>" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd_144" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<14>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<13>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<13>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0004_Madd5_lut<14>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0004_Madd5_lut<14>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd1_cy<13>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd1_cy<13>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0004_Madd_14" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0004_Madd_xor<14>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_Madd_cy<13>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_Madd_cy<13>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<7>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0004_ax5<7>_x_bk1<7>1" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0004_Madd4_cy<13>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0004_Madd4_cy<13>" (MUX) removed.
+The signal "BLOCK1/Madd_S_addsub0003_Madd_lut<15>" is unused and has been
+removed.
+ Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<15>" (ROM) removed.
+  The signal "BLOCK1/S_addsub0001<15>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0001_Madd_xor<15>" (XOR) removed.
+  The signal "BLOCK1/S_mult0003<15>" is unused and has been removed.
+  The signal "BLOCK1/S_mult0004<15>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0004_Madd6_xor<15>" (XOR) removed.
+    The signal "BLOCK1/Mmult_S_mult0004_Madd6_cy<14>" is unused and has been
+removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd6_cy<14>" (MUX) removed.
+    The signal "BLOCK1/Mmult_S_mult0004_Madd_153" is unused and has been removed.
+     Unused block "BLOCK1/Mmult_S_mult0004_Madd5_xor<15>" (XOR) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd5_cy<14>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd5_cy<14>" (MUX) removed.
+      The signal "BLOCK1/Mmult_S_mult0004_Madd_cy<14>" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0004_Madd_cy<14>" (MUX) removed.
+  The signal "N28" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_lut<15>_SW0" (ROM) removed.
+The signal "BLOCK1/Madd_S_cy<0>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_cy<0>" (MUX) removed.
+  The signal "BLOCK1/S_addsub0003<0>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<0>" (XOR) removed.
+  The signal "BLOCK1/Madd_S_lut<0>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_lut<0>" (ROM) removed.
+    The signal "ax6s<0>" is unused and has been removed.
+     Unused block "ax6s_0" (LATCH) removed.
+    The signal "bl1s<0>" is unused and has been removed.
+     Unused block "bl1s_0" (LATCH) removed.
+      The signal "bl1s_cmp_eq0000" is unused and has been removed.
+       Unused block "bl1s_cmp_eq00001" (ROM) removed.
+The signal "BLOCK1/Madd_S_cy<10>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_cy<10>" (MUX) removed.
+  The signal "BLOCK1/Madd_S_cy<9>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_cy<9>" (MUX) removed.
+    The signal "BLOCK1/Madd_S_cy<8>" is unused and has been removed.
+     Unused block "BLOCK1/Madd_S_cy<8>" (MUX) removed.
+      The signal "BLOCK1/Madd_S_cy<7>" is unused and has been removed.
+       Unused block "BLOCK1/Madd_S_cy<7>" (MUX) removed.
+        The signal "BLOCK1/Madd_S_cy<6>" is unused and has been removed.
+         Unused block "BLOCK1/Madd_S_cy<6>" (MUX) removed.
+          The signal "BLOCK1/Madd_S_cy<5>" is unused and has been removed.
+           Unused block "BLOCK1/Madd_S_cy<5>" (MUX) removed.
+            The signal "BLOCK1/Madd_S_cy<4>" is unused and has been removed.
+             Unused block "BLOCK1/Madd_S_cy<4>" (MUX) removed.
+              The signal "BLOCK1/Madd_S_cy<3>" is unused and has been removed.
+               Unused block "BLOCK1/Madd_S_cy<3>" (MUX) removed.
+                The signal "BLOCK1/Madd_S_cy<2>" is unused and has been removed.
+                 Unused block "BLOCK1/Madd_S_cy<2>" (MUX) removed.
+                  The signal "BLOCK1/Madd_S_cy<1>" is unused and has been removed.
+                   Unused block "BLOCK1/Madd_S_cy<1>" (MUX) removed.
+                    The signal "BLOCK1/S_addsub0003<1>" is unused and has been removed.
+                     Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<1>" (XOR) removed.
+                    The signal "BLOCK1/Madd_S_lut<1>" is unused and has been removed.
+                     Unused block "BLOCK1/Madd_S_lut<1>" (ROM) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd_110" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<1>" (XOR) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<1>" is unused and has been
+removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<1>" (ROM) removed.
+                          The signal "bl1s<1>" is unused and has been removed.
+                           Unused block "bl1s_1" (LATCH) removed.
+                          The signal "ax6s<1>" is unused and has been removed.
+                           Unused block "ax6s_1" (LATCH) removed.
+                  The signal "BLOCK1/S_addsub0003<2>" is unused and has been removed.
+                   Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<2>" (XOR) removed.
+                  The signal "BLOCK1/Madd_S_lut<2>" is unused and has been removed.
+                   Unused block "BLOCK1/Madd_S_lut<2>" (ROM) removed.
+                    The signal "BLOCK1/S_mult0005<2>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<2>" (XOR) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<2>" is unused and has been
+removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<2>" (ROM) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_Madd_25" is unused and has been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<2>" (XOR) removed.
+                          The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<1>" is unused and has been removed.
+                           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<1>" (MUX) removed.
+                            The signal "BLOCK1/Mmult_S_mult0005_ax6<0>_x_bl1<1>_mand1" is unused and has
+been removed.
+                             Unused block "BLOCK1/Mmult_S_mult0005_ax6<0>_x_bl1<1>_mand" (AND) removed.
+                          The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<2>" is unused and has been
+removed.
+                           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<2>" (ROM) removed.
+                            The signal "ax6s<2>" is unused and has been removed.
+                             Unused block "ax6s_2" (LATCH) removed.
+                        The signal "bl1s<2>" is unused and has been removed.
+                         Unused block "bl1s_2" (LATCH) removed.
+                The signal "BLOCK1/S_addsub0003<3>" is unused and has been removed.
+                 Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<3>" (XOR) removed.
+                The signal "BLOCK1/Madd_S_lut<3>" is unused and has been removed.
+                 Unused block "BLOCK1/Madd_S_lut<3>" (ROM) removed.
+                  The signal "BLOCK1/S_mult0005<3>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<3>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<2>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<2>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<3>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<3>" (ROM) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd_35" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<3>" (XOR) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<2>" is unused and has been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<2>" (MUX) removed.
+                          The signal "BLOCK1/Mmult_S_mult0005_ax6<1>_x_bl1<1>_mand1" is unused and has
+been removed.
+                           Unused block "BLOCK1/Mmult_S_mult0005_ax6<1>_x_bl1<1>_mand" (AND) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<3>" is unused and has been
+removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<3>" (ROM) removed.
+                          The signal "ax6s<3>" is unused and has been removed.
+                           Unused block "ax6s_3" (LATCH) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd_33" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd3_xor<3>" (XOR) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_Madd3_lut<3>" is unused and has been
+removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_Madd3_lut<3>" (ROM) removed.
+                          The signal "bl1s<3>" is unused and has been removed.
+                           Unused block "bl1s_3" (LATCH) removed.
+              The signal "BLOCK1/S_addsub0003<4>" is unused and has been removed.
+               Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<4>" (XOR) removed.
+              The signal "BLOCK1/Madd_S_lut<4>" is unused and has been removed.
+               Unused block "BLOCK1/Madd_S_lut<4>" (ROM) removed.
+                The signal "BLOCK1/S_mult0005<4>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<4>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<3>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<3>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<4>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<4>" (ROM) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd_45" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<4>" (XOR) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<3>" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<3>" (MUX) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_ax6<2>_x_bl1<1>_mand1" is unused and has
+been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_ax6<2>_x_bl1<1>_mand" (AND) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<4>" is unused and has been
+removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<4>" (ROM) removed.
+                        The signal "ax6s<4>" is unused and has been removed.
+                         Unused block "ax6s_4" (LATCH) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd_44" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd4_xor<4>" (XOR) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd4_lut<4>" is unused and has been
+removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd4_lut<4>" (ROM) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_Madd_43" is unused and has been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_Madd3_xor<4>" (XOR) removed.
+                          The signal "BLOCK1/Mmult_S_mult0005_Madd3_cy<3>" is unused and has been removed.
+                           Unused block "BLOCK1/Mmult_S_mult0005_Madd3_cy<3>" (MUX) removed.
+                            The signal "BLOCK1/Mmult_S_mult0005_ax6<0>_x_bl1<3>_mand1" is unused and has
+been removed.
+                             Unused block "BLOCK1/Mmult_S_mult0005_ax6<0>_x_bl1<3>_mand" (AND) removed.
+                          The signal "BLOCK1/Mmult_S_mult0005_Madd3_lut<4>" is unused and has been
+removed.
+                           Unused block "BLOCK1/Mmult_S_mult0005_Madd3_lut<4>" (ROM) removed.
+                            The signal "bl1s<4>" is unused and has been removed.
+                             Unused block "bl1s_4" (LATCH) removed.
+            The signal "BLOCK1/S_addsub0003<5>" is unused and has been removed.
+             Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<5>" (XOR) removed.
+            The signal "BLOCK1/Madd_S_lut<5>" is unused and has been removed.
+             Unused block "BLOCK1/Madd_S_lut<5>" (ROM) removed.
+              The signal "BLOCK1/S_mult0005<5>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<5>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<4>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<4>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<5>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<5>" (ROM) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd_55" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<5>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<4>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<4>" (MUX) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_ax6<3>_x_bl1<1>_mand1" is unused and has
+been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_ax6<3>_x_bl1<1>_mand" (AND) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<5>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<5>" (ROM) removed.
+                      The signal "ax6s<5>" is unused and has been removed.
+                       Unused block "ax6s_5" (LATCH) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd_54" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd4_xor<5>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<4>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<4>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd4_lut<5>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd4_lut<5>" (ROM) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd_52" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd2_xor<3>" (XOR) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_Madd2_lut<3>" is unused and has been
+removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_Madd2_lut<3>" (ROM) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd_53" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd3_xor<5>" (XOR) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_Madd3_cy<4>" is unused and has been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_Madd3_cy<4>" (MUX) removed.
+                          The signal "BLOCK1/Mmult_S_mult0005_ax6<0>_x_bl1<4>_mand1" is unused and has
+been removed.
+                           Unused block "BLOCK1/Mmult_S_mult0005_ax6<0>_x_bl1<4>_mand" (AND) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_Madd3_lut<5>" is unused and has been
+removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_Madd3_lut<5>" (ROM) removed.
+                          The signal "bl1s<5>" is unused and has been removed.
+                           Unused block "bl1s_5" (LATCH) removed.
+          The signal "BLOCK1/S_addsub0003<6>" is unused and has been removed.
+           Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<6>" (XOR) removed.
+          The signal "BLOCK1/Madd_S_lut<6>" is unused and has been removed.
+           Unused block "BLOCK1/Madd_S_lut<6>" (ROM) removed.
+            The signal "BLOCK1/S_mult0005<6>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<6>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<5>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<5>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<6>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<6>" (ROM) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd_65" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<6>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<5>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<5>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_ax6<4>_x_bl1<1>_mand1" is unused and has
+been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_ax6<4>_x_bl1<1>_mand" (AND) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<6>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<6>" (ROM) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd_61" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd1_xor<6>" (XOR) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd1_lut<6>" is unused and has been
+removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd1_lut<6>" (ROM) removed.
+                        The signal "bl1s<6>" is unused and has been removed.
+                         Unused block "bl1s_6" (LATCH) removed.
+                    The signal "ax6s<6>" is unused and has been removed.
+                     Unused block "ax6s_6" (LATCH) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd_64" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd4_xor<6>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<5>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<5>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd4_lut<6>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd4_lut<6>" (ROM) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd_62" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd2_xor<4>" (XOR) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd2_cy<3>" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd2_cy<3>" (MUX) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_ax6<3>_x_bl1<2>_mand1" is unused and has
+been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_ax6<3>_x_bl1<2>_mand" (AND) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd2_lut<4>" is unused and has been
+removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd2_lut<4>" (ROM) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd_63" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd3_xor<6>" (XOR) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd3_cy<5>" is unused and has been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd3_cy<5>" (MUX) removed.
+                        The signal "BLOCK1/Mmult_S_mult0005_ax6<1>_x_bl1<4>_mand1" is unused and has
+been removed.
+                         Unused block "BLOCK1/Mmult_S_mult0005_ax6<1>_x_bl1<4>_mand" (AND) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_Madd3_lut<6>" is unused and has been
+removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_Madd3_lut<6>" (ROM) removed.
+        The signal "BLOCK1/S_addsub0003<7>" is unused and has been removed.
+         Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<7>" (XOR) removed.
+        The signal "BLOCK1/Madd_S_lut<7>" is unused and has been removed.
+         Unused block "BLOCK1/Madd_S_lut<7>" (ROM) removed.
+          The signal "BLOCK1/S_mult0005<7>" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<7>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<6>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<6>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<7>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<7>" (ROM) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_75" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<7>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<6>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<6>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<7>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<7>" (ROM) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd_71" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd1_xor<7>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd1_cy<6>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd1_cy<6>" (MUX) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_ax6<5>_x_bl1<1>_mand1" is unused and has
+been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_ax6<5>_x_bl1<1>_mand" (AND) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd1_lut<7>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd1_lut<7>" (ROM) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd_7" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd_xor<7>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd_lut<7>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd_lut<7>" (ROM) removed.
+                      The signal "bl1s<7>" is unused and has been removed.
+                       Unused block "bl1s_7" (LATCH) removed.
+                      The signal "ax6s<7>" is unused and has been removed.
+                       Unused block "ax6s_7" (LATCH) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_74" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd4_xor<7>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<6>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<6>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd4_lut<7>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd4_lut<7>" (ROM) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd_72" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd2_xor<5>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd2_cy<4>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd2_cy<4>" (MUX) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_ax6<4>_x_bl1<2>_mand1" is unused and has
+been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_ax6<4>_x_bl1<2>_mand" (AND) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd2_lut<5>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd2_lut<5>" (ROM) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd_73" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd3_xor<7>" (XOR) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd3_cy<6>" is unused and has been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd3_cy<6>" (MUX) removed.
+                      The signal "BLOCK1/Mmult_S_mult0005_ax6<2>_x_bl1<4>_mand1" is unused and has
+been removed.
+                       Unused block "BLOCK1/Mmult_S_mult0005_ax6<2>_x_bl1<4>_mand" (AND) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_Madd3_lut<7>" is unused and has been
+removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_Madd3_lut<7>" (ROM) removed.
+      The signal "BLOCK1/S_addsub0003<8>" is unused and has been removed.
+       Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<8>" (XOR) removed.
+      The signal "BLOCK1/Madd_S_lut<8>" is unused and has been removed.
+       Unused block "BLOCK1/Madd_S_lut<8>" (ROM) removed.
+        The signal "BLOCK1/S_mult0005<8>" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<8>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<7>" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<7>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<8>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<8>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_85" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<8>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<7>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<7>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<8>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<8>" (ROM) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd_81" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd1_xor<8>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd1_cy<7>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd1_cy<7>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_ax6<6>_x_bl1<1>_mand1" is unused and has
+been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_ax6<6>_x_bl1<1>_mand" (AND) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd1_lut<8>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd1_lut<8>" (ROM) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd_8" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd_xor<8>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd_cy<7>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd_cy<7>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<0>_mand1" is unused and has
+been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<0>_mand" (AND) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_ax6<1>_x_bl1<7>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_ax6<1>_x_bl1<7>1" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_84" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd4_xor<8>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<7>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<7>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd4_lut<8>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd4_lut<8>" (ROM) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd_82" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd2_xor<6>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd2_cy<5>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd2_cy<5>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_ax6<5>_x_bl1<2>_mand1" is unused and has
+been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_ax6<5>_x_bl1<2>_mand" (AND) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd2_lut<6>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd2_lut<6>" (ROM) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd_83" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd3_xor<8>" (XOR) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd3_cy<7>" is unused and has been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd3_cy<7>" (MUX) removed.
+                    The signal "BLOCK1/Mmult_S_mult0005_ax6<3>_x_bl1<4>_mand1" is unused and has
+been removed.
+                     Unused block "BLOCK1/Mmult_S_mult0005_ax6<3>_x_bl1<4>_mand" (AND) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_Madd3_lut<8>" is unused and has been
+removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_Madd3_lut<8>" (ROM) removed.
+    The signal "BLOCK1/S_addsub0003<9>" is unused and has been removed.
+     Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<9>" (XOR) removed.
+    The signal "BLOCK1/Madd_S_lut<9>" is unused and has been removed.
+     Unused block "BLOCK1/Madd_S_lut<9>" (ROM) removed.
+      The signal "BLOCK1/S_mult0005<9>" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<9>" (XOR) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<8>" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<8>" (MUX) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<9>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<9>" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd_95" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<9>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<8>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<8>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<9>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<9>" (ROM) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_91" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd1_xor<9>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd1_cy<8>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd1_cy<8>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<1>_mand1" is unused and has
+been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<1>_mand" (AND) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_ax6<3>_x_bl1<6>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_ax6<3>_x_bl1<6>1" (ROM) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_9" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd_xor<9>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd_cy<8>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd_cy<8>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_ax6<2>_x_bl1<7>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_ax6<2>_x_bl1<7>1" (ROM) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd_94" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd4_xor<9>" (XOR) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<8>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<8>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd4_lut<9>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd4_lut<9>" (ROM) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_92" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd2_xor<7>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd2_cy<6>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd2_cy<6>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_ax6<6>_x_bl1<2>_mand1" is unused and has
+been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_ax6<6>_x_bl1<2>_mand" (AND) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd2_lut<7>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd2_lut<7>" (ROM) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_93" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd3_xor<9>" (XOR) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd3_cy<8>" is unused and has been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd3_cy<8>" (MUX) removed.
+                  The signal "BLOCK1/Mmult_S_mult0005_ax6<4>_x_bl1<4>_mand1" is unused and has
+been removed.
+                   Unused block "BLOCK1/Mmult_S_mult0005_ax6<4>_x_bl1<4>_mand" (AND) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_Madd3_lut<9>" is unused and has been
+removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_Madd3_lut<9>" (ROM) removed.
+  The signal "BLOCK1/S_addsub0003<10>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<10>" (XOR) removed.
+  The signal "BLOCK1/Madd_S_lut<10>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_lut<10>" (ROM) removed.
+    The signal "BLOCK1/S_mult0005<10>" is unused and has been removed.
+     Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<10>" (XOR) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<9>" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<9>" (MUX) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<10>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<10>" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd_105" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<10>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<9>" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<9>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<10>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<10>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_101" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd1_xor<10>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd1_cy<9>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd1_cy<9>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<4>_x_bl1<6>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<4>_x_bl1<6>1" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_10" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd_xor<10>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_cy<9>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd_cy<9>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<3>_x_bl1<7>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<3>_x_bl1<7>1" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd_104" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd4_xor<10>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<9>" is unused and has been removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<9>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd4_lut<10>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd4_lut<10>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_102" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd2_xor<8>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd2_cy<7>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd2_cy<7>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<2>_mand1" is unused and has
+been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<2>_mand" (AND) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<3>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<3>1" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_103" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd3_xor<10>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd3_cy<9>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd3_cy<9>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_ax6<5>_x_bl1<4>_mand1" is unused and has
+been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_ax6<5>_x_bl1<4>_mand" (AND) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd3_lut<10>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd3_lut<10>" (ROM) removed.
+The signal "BLOCK1/Madd_S_cy<11>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_cy<11>" (MUX) removed.
+  The signal "BLOCK1/S_addsub0003<11>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<11>" (XOR) removed.
+  The signal "BLOCK1/Madd_S_lut<11>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_lut<11>" (ROM) removed.
+    The signal "BLOCK1/S_mult0005<11>" is unused and has been removed.
+     Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<11>" (XOR) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<10>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<10>" (MUX) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<11>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<11>" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd_115" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<11>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<10>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<10>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<11>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<11>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_111" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd1_xor<11>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd1_cy<10>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd1_cy<10>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<5>_x_bl1<6>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<5>_x_bl1<6>1" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_11" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd_xor<11>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_cy<10>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd_cy<10>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<4>_x_bl1<7>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<4>_x_bl1<7>1" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd_114" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd4_xor<11>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<10>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<10>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd4_lut<11>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd4_lut<11>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd2_cy<8>" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd2_cy<8>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_113" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd3_xor<11>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd3_cy<10>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd3_cy<10>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_ax6<6>_x_bl1<4>_mand1" is unused and has
+been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_ax6<6>_x_bl1<4>_mand" (AND) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd3_lut<11>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd3_lut<11>" (ROM) removed.
+The signal "BLOCK1/Madd_S_cy<12>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_cy<12>" (MUX) removed.
+  The signal "BLOCK1/S_addsub0003<12>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<12>" (XOR) removed.
+  The signal "BLOCK1/Madd_S_lut<12>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_lut<12>" (ROM) removed.
+    The signal "BLOCK1/S_mult0005<12>" is unused and has been removed.
+     Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<12>" (XOR) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<11>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<11>" (MUX) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<12>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<12>" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd_125" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<12>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<11>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<11>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<12>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<12>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_121" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd1_xor<12>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd1_cy<11>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd1_cy<11>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<6>_x_bl1<6>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<6>_x_bl1<6>1" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_12" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd_xor<12>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_cy<11>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd_cy<11>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<5>_x_bl1<7>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<5>_x_bl1<7>1" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd_124" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd4_xor<12>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<11>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<11>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<12>_rt" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<12>_rt" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_123" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd3_xor<12>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd3_cy<11>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd3_cy<11>" (MUX) removed.
+                The signal "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<4>_mand1" is unused and has
+been removed.
+                 Unused block "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<4>_mand" (AND) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<5>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<5>1" (ROM) removed.
+The signal "BLOCK1/Madd_S_cy<13>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_cy<13>" (MUX) removed.
+  The signal "BLOCK1/S_addsub0003<13>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<13>" (XOR) removed.
+  The signal "BLOCK1/Madd_S_lut<13>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_lut<13>" (ROM) removed.
+    The signal "BLOCK1/S_mult0005<13>" is unused and has been removed.
+     Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<13>" (XOR) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<12>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<12>" (MUX) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<13>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<13>" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd_134" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<13>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<12>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<12>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<13>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<13>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_131" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd1_xor<13>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd1_cy<12>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd1_cy<12>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<6>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<6>1" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_13" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd_xor<13>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_cy<12>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd_cy<12>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<6>_x_bl1<7>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<6>_x_bl1<7>1" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd_133" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd4_xor<13>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<12>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<12>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<13>_rt" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<13>_rt" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd3_cy<12>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd3_cy<12>" (MUX) removed.
+The signal "BLOCK1/Madd_S_cy<14>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_cy<14>" (MUX) removed.
+  The signal "BLOCK1/S_addsub0003<14>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<14>" (XOR) removed.
+  The signal "BLOCK1/Madd_S_lut<14>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_lut<14>" (ROM) removed.
+    The signal "BLOCK1/S_mult0005<14>" is unused and has been removed.
+     Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<14>" (XOR) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<13>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<13>" (MUX) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd6_lut<14>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd6_lut<14>" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd_144" is unused and has been removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<14>" (XOR) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<13>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<13>" (MUX) removed.
+          The signal "BLOCK1/Mmult_S_mult0005_Madd5_lut<14>" is unused and has been
+removed.
+           Unused block "BLOCK1/Mmult_S_mult0005_Madd5_lut<14>" (ROM) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd1_cy<13>" is unused and has been
+removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd1_cy<13>" (MUX) removed.
+            The signal "BLOCK1/Mmult_S_mult0005_Madd_14" is unused and has been removed.
+             Unused block "BLOCK1/Mmult_S_mult0005_Madd_xor<14>" (XOR) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_Madd_cy<13>" is unused and has been removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_Madd_cy<13>" (MUX) removed.
+              The signal "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<7>" is unused and has been
+removed.
+               Unused block "BLOCK1/Mmult_S_mult0005_ax6<7>_x_bl1<7>1" (ROM) removed.
+        The signal "BLOCK1/Mmult_S_mult0005_Madd4_cy<13>" is unused and has been
+removed.
+         Unused block "BLOCK1/Mmult_S_mult0005_Madd4_cy<13>" (MUX) removed.
+The signal "BLOCK1/Madd_S_lut<15>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_lut<15>" (ROM) removed.
+  The signal "BLOCK1/S_addsub0003<15>" is unused and has been removed.
+   Unused block "BLOCK1/Madd_S_addsub0003_Madd_xor<15>" (XOR) removed.
+  The signal "BLOCK1/S_mult0005<15>" is unused and has been removed.
+   Unused block "BLOCK1/Mmult_S_mult0005_Madd6_xor<15>" (XOR) removed.
+    The signal "BLOCK1/Mmult_S_mult0005_Madd6_cy<14>" is unused and has been
+removed.
+     Unused block "BLOCK1/Mmult_S_mult0005_Madd6_cy<14>" (MUX) removed.
+    The signal "BLOCK1/Mmult_S_mult0005_Madd_153" is unused and has been removed.
+     Unused block "BLOCK1/Mmult_S_mult0005_Madd5_xor<15>" (XOR) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd5_cy<14>" is unused and has been
+removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd5_cy<14>" (MUX) removed.
+      The signal "BLOCK1/Mmult_S_mult0005_Madd_cy<14>" is unused and has been removed.
+       Unused block "BLOCK1/Mmult_S_mult0005_Madd_cy<14>" (MUX) removed.
+The signal "N12" is unused and has been removed.
+ Unused block "PC/ENDERECO_PARA_LER_mux0000<2>_SW0" (ROM) removed.
+The signal "N16" is unused and has been removed.
+ Unused block "PC/ENDERECO_PARA_LER_mux0000<0>_SW0" (ROM) removed.
+The signal "PC/ENDERECO_PARA_LER<0>" is unused and has been removed.
+ Unused block "PC/ENDERECO_PARA_LER_0" (LATCH) removed.
+  The signal "PC/ENDERECO_PARA_LER_mux0000<0>" is unused and has been removed.
+   Unused block "PC/ENDERECO_PARA_LER_mux0000<0>" (ROM) removed.
+  The signal "PC/ENDERECO_PARA_LER_or0000" is unused and has been removed.
+   Unused block "PC/ENDERECO_PARA_LER_or00001" (ROM) removed.
+The signal "PC/ENDERECO_PARA_LER<1>" is unused and has been removed.
+ Unused block "PC/ENDERECO_PARA_LER_1" (LATCH) removed.
+  The signal "PC/ENDERECO_PARA_LER_mux0000<1>" is unused and has been removed.
+   Unused block "PC/ENDERECO_PARA_LER_mux0000<1>10" (ROM) removed.
+    The signal "PC/ENDERECO_PARA_LER_mux0000<1>4" is unused and has been removed.
+     Unused block "PC/ENDERECO_PARA_LER_mux0000<1>4" (ROM) removed.
+    The signal "PC/ENDERECO_PARA_LER_mux0000<1>9" is unused and has been removed.
+     Unused block "PC/ENDERECO_PARA_LER_mux0000<1>9" (ROM) removed.
+The signal "PC/ENDERECO_PARA_LER<2>" is unused and has been removed.
+ Unused block "PC/ENDERECO_PARA_LER_2" (LATCH) removed.
+  The signal "PC/ENDERECO_PARA_LER_mux0000<2>" is unused and has been removed.
+   Unused block "PC/ENDERECO_PARA_LER_mux0000<2>" (ROM) removed.
+The signal "PC/ENDERECO_PARA_LER<3>" is unused and has been removed.
+ Unused block "PC/ENDERECO_PARA_LER_3" (LATCH) removed.
+  The signal "PC/ENDERECO_PARA_LER_mux0000<3>" is unused and has been removed.
+   Unused block "PC/ENDERECO_PARA_LER_mux0000<3>1" (ROM) removed.
+The signal "PC/ENDERECO_PARA_LER<4>" is unused and has been removed.
+ Unused block "PC/ENDERECO_PARA_LER_4" (LATCH) removed.
+  The signal "PC/ENDERECO_PARA_LER_mux0000<4>" is unused and has been removed.
+   Unused block "PC/ENDERECO_PARA_LER_mux0000<4>1" (ROM) removed.
+The signal "PC/ENDERECO_PARA_LER<5>" is unused and has been removed.
+ Unused block "PC/ENDERECO_PARA_LER_5" (LATCH) removed.
+  The signal "PC/ENDERECO_PARA_LER_mux0000<5>" is unused and has been removed.
+   Unused block "PC/ENDERECO_PARA_LER_mux0000<5>1" (ROM) removed.
+    The signal "PC/N01" is unused and has been removed.
+     Unused block "PC/ENDERECO_PARA_LER_mux0000<5>11" (ROM) removed.
+The signal "PC/ENDERECO_PARA_LER<6>" is unused and has been removed.
+ Unused block "PC/ENDERECO_PARA_LER_6" (LATCH) removed.
+  The signal "PC/ENDERECO_PARA_LER_mux0000<6>" is unused and has been removed.
+   Unused block "PC/ENDERECO_PARA_LER_mux0000<6>1" (ROM) removed.
+The signal "PC/MEM_WRITE_ENABLE<0>" is unused and has been removed.
+ Unused block "PC/MEM_WRITE_ENABLE_0" (LATCH) removed.
+  The signal "PC/MEM_WRITE_ENABLE_0_or0000" is unused and has been removed.
+   Unused block "PC/MEM_WRITE_ENABLE_0_or00001" (ROM) removed.
+The signal "PC/external_qtd_lida_0_1" is unused and has been removed.
+ Unused block "PC/external_qtd_lida_0_1" (LATCH) removed.
+The signal "PC/external_qtd_lida_2_1" is unused and has been removed.
+ Unused block "PC/external_qtd_lida_2_1" (LATCH) removed.
+The signal "ax1s<0>" is unused and has been removed.
+ Unused block "ax1s_0" (LATCH) removed.
+The signal "ax1s<1>" is unused and has been removed.
+ Unused block "ax1s_1" (LATCH) removed.
+The signal "ax1s<2>" is unused and has been removed.
+ Unused block "ax1s_2" (LATCH) removed.
+The signal "ax1s<3>" is unused and has been removed.
+ Unused block "ax1s_3" (LATCH) removed.
+The signal "ax1s<4>" is unused and has been removed.
+ Unused block "ax1s_4" (LATCH) removed.
+The signal "ax1s<5>" is unused and has been removed.
+ Unused block "ax1s_5" (LATCH) removed.
+The signal "ax1s<6>" is unused and has been removed.
+ Unused block "ax1s_6" (LATCH) removed.
+The signal "ax1s<7>" is unused and has been removed.
+ Unused block "ax1s_7" (LATCH) removed.
+The signal "ax2s<0>" is unused and has been removed.
+ Unused block "ax2s_0" (LATCH) removed.
+The signal "ax2s<1>" is unused and has been removed.
+ Unused block "ax2s_1" (LATCH) removed.
+The signal "ax2s<2>" is unused and has been removed.
+ Unused block "ax2s_2" (LATCH) removed.
+The signal "ax2s<3>" is unused and has been removed.
+ Unused block "ax2s_3" (LATCH) removed.
+The signal "ax2s<4>" is unused and has been removed.
+ Unused block "ax2s_4" (LATCH) removed.
+The signal "ax2s<5>" is unused and has been removed.
+ Unused block "ax2s_5" (LATCH) removed.
+The signal "ax2s<6>" is unused and has been removed.
+ Unused block "ax2s_6" (LATCH) removed.
+The signal "ax2s<7>" is unused and has been removed.
+ Unused block "ax2s_7" (LATCH) removed.
+The signal "ax3s<0>" is unused and has been removed.
+ Unused block "ax3s_0" (LATCH) removed.
+The signal "ax3s<1>" is unused and has been removed.
+ Unused block "ax3s_1" (LATCH) removed.
+The signal "ax3s<2>" is unused and has been removed.
+ Unused block "ax3s_2" (LATCH) removed.
+The signal "ax3s<3>" is unused and has been removed.
+ Unused block "ax3s_3" (LATCH) removed.
+The signal "ax3s<4>" is unused and has been removed.
+ Unused block "ax3s_4" (LATCH) removed.
+The signal "ax3s<5>" is unused and has been removed.
+ Unused block "ax3s_5" (LATCH) removed.
+The signal "ax3s<6>" is unused and has been removed.
+ Unused block "ax3s_6" (LATCH) removed.
+The signal "ax3s<7>" is unused and has been removed.
+ Unused block "ax3s_7" (LATCH) removed.
+The signal "ax4s<0>" is unused and has been removed.
+ Unused block "ax4s_0" (LATCH) removed.
+The signal "ax4s<1>" is unused and has been removed.
+ Unused block "ax4s_1" (LATCH) removed.
+The signal "ax4s<2>" is unused and has been removed.
+ Unused block "ax4s_2" (LATCH) removed.
+The signal "ax4s<3>" is unused and has been removed.
+ Unused block "ax4s_3" (LATCH) removed.
+The signal "ax4s<4>" is unused and has been removed.
+ Unused block "ax4s_4" (LATCH) removed.
+The signal "ax4s<5>" is unused and has been removed.
+ Unused block "ax4s_5" (LATCH) removed.
+The signal "ax4s<6>" is unused and has been removed.
+ Unused block "ax4s_6" (LATCH) removed.
+The signal "ax4s<7>" is unused and has been removed.
+ Unused block "ax4s_7" (LATCH) removed.
+The signal "bj1s<0>" is unused and has been removed.
+ Unused block "bj1s_0" (LATCH) removed.
+  The signal "bj1s_cmp_eq0000" is unused and has been removed.
+   Unused block "bj1s_cmp_eq00001" (ROM) removed.
+The signal "bj1s<1>" is unused and has been removed.
+ Unused block "bj1s_1" (LATCH) removed.
+The signal "bj1s<2>" is unused and has been removed.
+ Unused block "bj1s_2" (LATCH) removed.
+The signal "bj1s<3>" is unused and has been removed.
+ Unused block "bj1s_3" (LATCH) removed.
+The signal "bj1s<4>" is unused and has been removed.
+ Unused block "bj1s_4" (LATCH) removed.
+The signal "bj1s<5>" is unused and has been removed.
+ Unused block "bj1s_5" (LATCH) removed.
+The signal "bj1s<6>" is unused and has been removed.
+ Unused block "bj1s_6" (LATCH) removed.
+The signal "bj1s<7>" is unused and has been removed.
+ Unused block "bj1s_7" (LATCH) removed.
+The signal "bx1s<0>" is unused and has been removed.
+ Unused block "bx1s_0" (LATCH) removed.
+  The signal "bx1s_cmp_eq0000" is unused and has been removed.
+   Unused block "bx1s_cmp_eq00001" (ROM) removed.
+The signal "bx1s<1>" is unused and has been removed.
+ Unused block "bx1s_1" (LATCH) removed.
+The signal "bx1s<2>" is unused and has been removed.
+ Unused block "bx1s_2" (LATCH) removed.
+The signal "bx1s<3>" is unused and has been removed.
+ Unused block "bx1s_3" (LATCH) removed.
+The signal "bx1s<4>" is unused and has been removed.
+ Unused block "bx1s_4" (LATCH) removed.
+The signal "bx1s<5>" is unused and has been removed.
+ Unused block "bx1s_5" (LATCH) removed.
+The signal "bx1s<6>" is unused and has been removed.
+ Unused block "bx1s_6" (LATCH) removed.
+The signal "bx1s<7>" is unused and has been removed.
+ Unused block "bx1s_7" (LATCH) removed.
+The signal "by1s<0>" is unused and has been removed.
+ Unused block "by1s_0" (LATCH) removed.
+  The signal "by1s_cmp_eq0000" is unused and has been removed.
+   Unused block "by1s_cmp_eq00001" (ROM) removed.
+The signal "by1s<1>" is unused and has been removed.
+ Unused block "by1s_1" (LATCH) removed.
+The signal "by1s<2>" is unused and has been removed.
+ Unused block "by1s_2" (LATCH) removed.
+The signal "by1s<3>" is unused and has been removed.
+ Unused block "by1s_3" (LATCH) removed.
+The signal "by1s<4>" is unused and has been removed.
+ Unused block "by1s_4" (LATCH) removed.
+The signal "by1s<5>" is unused and has been removed.
+ Unused block "by1s_5" (LATCH) removed.
+The signal "by1s<6>" is unused and has been removed.
+ Unused block "by1s_6" (LATCH) removed.
+The signal "by1s<7>" is unused and has been removed.
+ Unused block "by1s_7" (LATCH) removed.
+The signal "bz1s<0>" is unused and has been removed.
+ Unused block "bz1s_0" (LATCH) removed.
+  The signal "bz1s_cmp_eq0000" is unused and has been removed.
+   Unused block "bz1s_cmp_eq00001" (ROM) removed.
+The signal "bz1s<1>" is unused and has been removed.
+ Unused block "bz1s_1" (LATCH) removed.
+The signal "bz1s<2>" is unused and has been removed.
+ Unused block "bz1s_2" (LATCH) removed.
+The signal "bz1s<3>" is unused and has been removed.
+ Unused block "bz1s_3" (LATCH) removed.
+The signal "bz1s<4>" is unused and has been removed.
+ Unused block "bz1s_4" (LATCH) removed.
+The signal "bz1s<5>" is unused and has been removed.
+ Unused block "bz1s_5" (LATCH) removed.
+The signal "bz1s<6>" is unused and has been removed.
+ Unused block "bz1s_6" (LATCH) removed.
+The signal "bz1s<7>" is unused and has been removed.
+ Unused block "bz1s_7" (LATCH) removed.
+The signal "saida<0>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<0>" (XOR) removed.
+The signal "saida<10>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<10>" (XOR) removed.
+The signal "saida<11>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<11>" (XOR) removed.
+The signal "saida<12>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<12>" (XOR) removed.
+The signal "saida<13>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<13>" (XOR) removed.
+The signal "saida<14>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<14>" (XOR) removed.
+The signal "saida<15>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<15>" (XOR) removed.
+The signal "saida<1>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<1>" (XOR) removed.
+The signal "saida<2>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<2>" (XOR) removed.
+The signal "saida<3>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<3>" (XOR) removed.
+The signal "saida<4>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<4>" (XOR) removed.
+The signal "saida<5>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<5>" (XOR) removed.
+The signal "saida<6>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<6>" (XOR) removed.
+The signal "saida<7>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<7>" (XOR) removed.
+The signal "saida<8>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<8>" (XOR) removed.
+The signal "saida<9>" is unused and has been removed.
+ Unused block "BLOCK1/Madd_S_xor<9>" (XOR) removed.
+The signal "PC/external_qtd_lida_mux0000<3>_SW0/O" is unused and has been
+removed.
+ Unused block "PC/external_qtd_lida_mux0000<3>_SW0" (ROM) removed.
+The signal "PC/external_qtd_lida_mux0000<3>111/O" is unused and has been
+removed.
+ Unused block "PC/external_qtd_lida_mux0000<3>111" (ROM) removed.
+The signal "PC/internal_qtd_lida_mux0000<5>_SW0/O" is unused and has been
+removed.
+ Unused block "PC/internal_qtd_lida_mux0000<5>_SW0" (ROM) removed.
+The signal "PC/external_qtd_lida_mux0000<5>_SW0/O" is unused and has been
+removed.
+ Unused block "PC/external_qtd_lida_mux0000<5>_SW0" (ROM) removed.
+Unused block "BLOCK1/Mmult_S_mult0000" (MULT18X18SIO) removed.
+Unused block "BLOCK1/Mmult_S_mult0001" (MULT18X18SIO) removed.
+Unused block "BLOCK1/Mmult_S_mult0002" (MULT18X18SIO) removed.
+Unused block "BLOCK1/Mmult_S_mult0003" (MULT18X18SIO) removed.
+Unused block
+"single_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cs
+tr/ramloop[0].ram.r/s3_init.ram/spram.ram" (RAMB16_S36_S36) removed.
+Unused block "single_port_RAM/XST_GND" (ZERO) removed.
+Unused block "single_port_RAM/XST_VCC" (ONE) removed.
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| M_CLOCK                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| M_RESET                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

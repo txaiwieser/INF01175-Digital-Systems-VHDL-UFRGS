@@ -1,0 +1,520 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: matrix_multiplier.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "matrix_multiplier.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "matrix_multiplier"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : matrix_multiplier
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation_arq/mad_block.vhd" in Library work.
+Architecture behavioral of Entity mad_block is up to date.
+Compiling vhdl file "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation_arq/mm_state_machine.vhd" in Library work.
+Architecture behavioral of Entity mm_state_machine is up to date.
+Compiling vhdl file "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation/ipcore_dir/mem48single.vhd" in Library work.
+Architecture mem48single_a of Entity mem48single is up to date.
+Compiling vhdl file "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation_arq/matrix_multiplier.vhd" in Library work.
+Architecture behavioral of Entity matrix_multiplier is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <matrix_multiplier> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mad_block> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mm_state_machine> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <matrix_multiplier> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation_arq/matrix_multiplier.vhd" line 167: Instantiating black box module <mem48single>.
+Entity <matrix_multiplier> analyzed. Unit <matrix_multiplier> generated.
+
+Analyzing Entity <mad_block> in library <work> (Architecture <behavioral>).
+Entity <mad_block> analyzed. Unit <mad_block> generated.
+
+Analyzing Entity <mm_state_machine> in library <work> (Architecture <behavioral>).
+Entity <mm_state_machine> analyzed. Unit <mm_state_machine> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mad_block>.
+    Related source file is "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation_arq/mad_block.vhd".
+    Found 16-bit adder for signal <S>.
+    Found 16-bit adder for signal <S$addsub0000> created at line 45.
+    Found 16-bit adder for signal <S$addsub0001> created at line 45.
+    Found 16-bit adder for signal <S$addsub0002> created at line 45.
+    Found 16-bit adder for signal <S$addsub0003> created at line 45.
+    Found 8x8-bit multiplier for signal <S$mult0000> created at line 45.
+    Found 8x8-bit multiplier for signal <S$mult0001> created at line 45.
+    Found 8x8-bit multiplier for signal <S$mult0002> created at line 45.
+    Found 8x8-bit multiplier for signal <S$mult0003> created at line 45.
+    Found 8x8-bit multiplier for signal <S$mult0004> created at line 45.
+    Found 8x8-bit multiplier for signal <S$mult0005> created at line 45.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred   6 Multiplier(s).
+Unit <mad_block> synthesized.
+
+
+Synthesizing Unit <mm_state_machine>.
+    Related source file is "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation_arq/mm_state_machine.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <interna_done>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Using one-hot encoding for signal <ESTADO_ATUAL>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <ESTADO_ATUAL> of Case statement line 76 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <ESTADO_ATUAL> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+WARNING:Xst:737 - Found 1-bit latch for signal <REGISTER_WRITE_ENABLE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <six_counter>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <ENDERECO_PARA_LER>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 6-bit latch for signal <internal_qtd_lida>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <MEM_RESULT_SAVE_POSITION>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 6-bit latch for signal <external_qtd_lida>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MEM_WRITE_ENABLE_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 8-bit adder for signal <ENDERECO_PARA_LER$addsub0000> created at line 185.
+    Found 19-bit register for signal <ESTADO_ATUAL>.
+    Found 6-bit adder for signal <external_qtd_lida$addsub0000> created at line 205.
+    Found 4-bit comparator less for signal <external_qtd_lida$cmp_lt0000> created at line 202.
+    Found 8-bit comparator greater for signal <interna_done$cmp_gt0000> created at line 64.
+    Found 6-bit adder for signal <internal_qtd_lida$addsub0000> created at line 200.
+    Found 3-bit adder for signal <six_counter$addsub0000> created at line 199.
+    Found 4-bit comparator greatequal for signal <six_counter$cmp_ge0000> created at line 202.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <mm_state_machine> synthesized.
+
+
+Synthesizing Unit <matrix_multiplier>.
+    Related source file is "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_single_port_implementation_arq/matrix_multiplier.vhd".
+WARNING:Xst:646 - Signal <done> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 8-bit latch for signal <by1s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <bj1s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <bz1s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <bk1s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <ax1s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <ax2s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <ax3s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <ax4s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <bl1s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <ax5s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <ax6s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <bx1s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <aux>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <matrix_multiplier> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 6
+ 8x8-bit multiplier                                    : 6
+# Adders/Subtractors                                   : 9
+ 16-bit adder                                          : 5
+ 3-bit adder                                           : 1
+ 6-bit adder                                           : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 1
+ 19-bit register                                       : 1
+# Latches                                              : 21
+ 1-bit latch                                           : 3
+ 3-bit latch                                           : 2
+ 6-bit latch                                           : 2
+ 8-bit latch                                           : 14
+# Comparators                                          : 3
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator less                                 : 1
+ 8-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/mem48single.ngc>.
+Loading core <mem48single> for timing and area information for instance <single_port_RAM>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 6
+ 8x8-bit multiplier                                    : 6
+# Adders/Subtractors                                   : 9
+ 16-bit adder                                          : 5
+ 3-bit adder                                           : 1
+ 6-bit adder                                           : 2
+ 8-bit adder                                           : 1
+# Latches                                              : 21
+ 1-bit latch                                           : 3
+ 3-bit latch                                           : 2
+ 6-bit latch                                           : 2
+ 8-bit latch                                           : 14
+# Comparators                                          : 3
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator less                                 : 1
+ 8-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <ENDERECO_PARA_LER_7> (without init value) has a constant value of 0 in block <mm_state_machine>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <matrix_multiplier> ...
+
+Optimizing unit <mad_block> ...
+
+Optimizing unit <mm_state_machine> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block matrix_multiplier, actual ratio is 21.
+Latch PC/external_qtd_lida_0 has been replicated 1 time(s)
+Latch PC/external_qtd_lida_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : matrix_multiplier.ngr
+Top Level Output File Name         : matrix_multiplier
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 2
+
+Cell Usage :
+# BELS                             : 760
+#      GND                         : 2
+#      LUT1                        : 4
+#      LUT2                        : 125
+#      LUT2_L                      : 1
+#      LUT3                        : 56
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 145
+#      LUT4_D                      : 1
+#      LUT4_L                      : 2
+#      MULT_AND                    : 46
+#      MUXCY                       : 183
+#      MUXF5                       : 1
+#      VCC                         : 2
+#      XORCY                       : 190
+# FlipFlops/Latches                : 153
+#      FDCP                        : 19
+#      LD                          : 37
+#      LDC                         : 1
+#      LDE                         : 96
+# RAMS                             : 1
+#      RAMB16_S36_S36              : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 1
+#      IBUF                        : 1
+# MULTs                            : 4
+#      MULT18X18SIO                : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      188  out of    960    19%  
+ Number of Slice Flip Flops:            153  out of   1920     7%  
+ Number of 4 input LUTs:                336  out of   1920    17%  
+ Number of IOs:                           2
+ Number of bonded IOBs:                   2  out of     83     2%  
+ Number of BRAMs:                         1  out of      4    25%  
+ Number of MULT18X18SIOs:                 4  out of      4   100%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------+---------------------------------------+-------+
+Clock Signal                                                            | Clock buffer(FF name)                 | Load  |
+------------------------------------------------------------------------+---------------------------------------+-------+
+M_CLOCK                                                                 | BUFGP                                 | 20    |
+PC/REGISTER_WRITE_ENABLE1                                               | BUFG                                  | 96    |
+aux_not0001(aux_not00011_f5:O)                                          | NONE(*)(aux_0)                        | 8     |
+PC/ENDERECO_PARA_LER_or0000(PC/ENDERECO_PARA_LER_or00001:O)             | NONE(*)(PC/ENDERECO_PARA_LER_6)       | 7     |
+PC/six_counter_or0000(PC/six_counter_or00001:O)                         | NONE(*)(PC/six_counter_2)             | 9     |
+PC/MEM_RESULT_SAVE_POSITION_or0000(PC/MEM_RESULT_SAVE_POSITION_or0000:O)| NONE(*)(PC/MEM_RESULT_SAVE_POSITION_2)| 3     |
+PC/external_qtd_lida_not0001(PC/external_qtd_lida_not00011:O)           | NONE(*)(PC/external_qtd_lida_5)       | 8     |
+PC/interna_done_cmp_gt0000(PC/interna_done_cmp_gt00001:O)               | NONE(*)(PC/interna_done)              | 1     |
+PC/REGISTER_WRITE_ENABLE_or0000(PC/REGISTER_WRITE_ENABLE_or000016:O)    | NONE(*)(PC/REGISTER_WRITE_ENABLE)     | 1     |
+PC/MEM_WRITE_ENABLE_0_or0000(PC/MEM_WRITE_ENABLE_0_or00001:O)           | NONE(*)(PC/MEM_WRITE_ENABLE_0)        | 1     |
+------------------------------------------------------------------------+---------------------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------+------------------------+-------+
+Control Signal                                           | Buffer(FF name)        | Load  |
+---------------------------------------------------------+------------------------+-------+
+N0(XST_GND:G)                                            | NONE(PC/ESTADO_ATUAL_0)| 19    |
+PC/ESTADO_ATUAL_18__or0000(PC/ESTADO_ATUAL_18__or00001:O)| NONE(PC/ESTADO_ATUAL_0)| 19    |
+M_RESET                                                  | IBUF                   | 1     |
+---------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.199ns (Maximum Frequency: 312.554MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M_CLOCK'
+  Clock period: 2.976ns (frequency: 335.971MHz)
+  Total number of paths / destination ports: 21 / 19
+-------------------------------------------------------------------------
+Delay:               2.976ns (Levels of Logic = 2)
+  Source:            PC/ESTADO_ATUAL_17 (FF)
+  Destination:       PC/ESTADO_ATUAL_1 (FF)
+  Source Clock:      M_CLOCK rising
+  Destination Clock: M_CLOCK rising
+
+  Data Path: PC/ESTADO_ATUAL_17 to PC/ESTADO_ATUAL_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCP:C->Q            15   0.514   0.867  PC/ESTADO_ATUAL_17 (PC/ESTADO_ATUAL_17)
+     LUT4_D:I3->LO         1   0.612   0.103  PC/external_qtd_lida_mux0000<5>31 (N50)
+     LUT4:I3->O            1   0.612   0.000  PC/ESTADO_ATUAL_mux0000<17>1 (PC/ESTADO_ATUAL_mux0000<17>)
+     FDCP:D                    0.268          PC/ESTADO_ATUAL_1
+    ----------------------------------------
+    Total                      2.976ns (2.006ns logic, 0.970ns route)
+                                       (67.4% logic, 32.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PC/six_counter_or0000'
+  Clock period: 3.167ns (frequency: 315.756MHz)
+  Total number of paths / destination ports: 30 / 9
+-------------------------------------------------------------------------
+Delay:               3.167ns (Levels of Logic = 2)
+  Source:            PC/internal_qtd_lida_2 (LATCH)
+  Destination:       PC/internal_qtd_lida_4 (LATCH)
+  Source Clock:      PC/six_counter_or0000 falling
+  Destination Clock: PC/six_counter_or0000 falling
+
+  Data Path: PC/internal_qtd_lida_2 to PC/internal_qtd_lida_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               9   0.588   0.727  PC/internal_qtd_lida_2 (PC/internal_qtd_lida_2)
+     LUT3_D:I2->O          1   0.612   0.360  PC/internal_qtd_lida_mux0000<3>21 (PC/N12)
+     LUT4:I3->O            1   0.612   0.000  PC/internal_qtd_lida_mux0000<4>1 (PC/internal_qtd_lida_mux0000<4>)
+     LD:D                      0.268          PC/internal_qtd_lida_4
+    ----------------------------------------
+    Total                      3.167ns (2.080ns logic, 1.087ns route)
+                                       (65.7% logic, 34.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PC/external_qtd_lida_not0001'
+  Clock period: 3.199ns (frequency: 312.554MHz)
+  Total number of paths / destination ports: 25 / 8
+-------------------------------------------------------------------------
+Delay:               3.199ns (Levels of Logic = 2)
+  Source:            PC/external_qtd_lida_1 (LATCH)
+  Destination:       PC/external_qtd_lida_4 (LATCH)
+  Source Clock:      PC/external_qtd_lida_not0001 falling
+  Destination Clock: PC/external_qtd_lida_not0001 falling
+
+  Data Path: PC/external_qtd_lida_1 to PC/external_qtd_lida_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              15   0.588   1.016  PC/external_qtd_lida_1 (PC/external_qtd_lida_1)
+     LUT2_L:I0->LO         1   0.612   0.103  PC/external_qtd_lida_mux0000<3>_SW0 (N20)
+     LUT4:I3->O            1   0.612   0.000  PC/external_qtd_lida_mux0000<3> (PC/external_qtd_lida_mux0000<3>)
+     LD:D                      0.268          PC/external_qtd_lida_3
+    ----------------------------------------
+    Total                      3.199ns (2.080ns logic, 1.119ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.69 secs
+ 
+--> 
+
+Total memory usage is 282832 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

@@ -1,0 +1,2 @@
+vhdl work "netgen/par/matrix_multiplier_timesim.vhd"
+vhdl work "../matrix_multiplier_single_port_implementation_arq/matrix_multiplier_tb.vhd"

@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/mem48single.vhd"
+vhdl work "../matrix_multiplier_single_port_implementation_arq/mm_state_machine.vhd"
+vhdl work "../matrix_multiplier_single_port_implementation_arq/mad_block.vhd"
+vhdl work "../matrix_multiplier_single_port_implementation_arq/matrix_multiplier.vhd"

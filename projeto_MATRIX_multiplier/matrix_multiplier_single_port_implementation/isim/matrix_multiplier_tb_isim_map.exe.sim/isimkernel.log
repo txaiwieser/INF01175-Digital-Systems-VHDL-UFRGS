@@ -1,0 +1,32 @@
+Command line:
+   matrix_multiplier_tb_isim_map.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/map/matrix_multiplier_map.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  49298
+
+Thu Jul 03 03:45:08 2014
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 666.943 Meg
+
+ Total Signals          : 47
+ Total Nets             : 35
+ Total Signal Drivers   : 12
+ Total Blocks           : 18
+ Total Primitive Blocks : 12
+ Total Processes        : 12
+ Total Traceable Variables  : 109
+ Total Scalar Nets and Variables : 4528
+Total Line Count : 74
+Total Line Count : 74
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 981.516 Meg
+
+Thu Jul 03 03:46:31 2014
+
