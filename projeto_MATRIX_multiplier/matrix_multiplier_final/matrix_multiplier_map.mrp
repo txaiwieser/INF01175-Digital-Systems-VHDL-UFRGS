@@ -1,0 +1,254 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'matrix_multiplier'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off
+-c 100 -o matrix_multiplier_map.ncd matrix_multiplier.ngd matrix_multiplier.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Mon Jul 07 02:37:26 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   26
+Logic Utilization:
+  Total Number Slice Registers:          59 out of   1,920    3%
+    Number used as Flip Flops:           27
+    Number used as Latches:              32
+  Number of 4 input LUTs:               167 out of   1,920    8%
+Logic Distribution:
+  Number of occupied Slices:             86 out of     960    8%
+    Number of Slices containing only related logic:      86 out of      86 100%
+    Number of Slices containing unrelated logic:          0 out of      86   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         167 out of   1,920    8%
+  Number of bonded IOBs:                 19 out of      83   22%
+    IOB Latches:                          1
+  Number of RAMB16s:                      2 out of       4   50%
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of MULT18X18SIOs:                1 out of       4   25%
+
+Average Fanout of Non-Clock Nets:                2.47
+
+Peak Memory Usage:  251 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net PC/ESTADO_ATUAL_cmp_gt0000
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   PC/internal_adress_mem_1_or0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   PC/internal_adress_mem_2_or0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   PC/internal_column_counter_not0001 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   PC/internal_loop_counter_or0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   PC/internal_qtd_outputs_or0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB3> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB6> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB7> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB11> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB12> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB13> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<dual_port_RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp36x36.ram.B>:<RAMB16_RAMB16B>.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   4 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		dual_port_RAM/XST_GND
+VCC 		dual_port_RAM/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DONE                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<0>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<1>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<2>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<3>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<4>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<5>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<6>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<7>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<8>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<9>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<10>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<11>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<12>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<13>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<14>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| FINAL_OUTPUT_RESULT<15>            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| M_CLOCK                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| M_RESET                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,2 @@
+vhdl work "netgen/map/matrix_multiplier_map.vhd"
+vhdl work "../matrix_multiplier_final_arq/tb_matrix_multiplier.vhd"

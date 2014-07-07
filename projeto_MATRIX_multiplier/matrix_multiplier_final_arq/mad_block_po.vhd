@@ -13,7 +13,7 @@ entity mad_block_po is
 end mad_block_po;
 
 architecture Behavioral of mad_block_po is
-    signal reg_a, reg_b, reg_c : STD_LOGIC_VECTOR (7 downto 0);
+    signal reg_a, reg_b : STD_LOGIC_VECTOR (7 downto 0);
     signal reg_c, reg_d : STD_LOGIC_VECTOR (15 downto 0);
     signal mux :  STD_LOGIC_VECTOR (15 downto 0);
     signal sum :  STD_LOGIC_VECTOR (15 downto 0);
@@ -36,28 +36,28 @@ end process;
 
 -- registrador A
 process begin
-  wait until risingedge(CLOCK);
+  wait until rising_edge(CLOCK);
     if ld_reg_a = '1' then reg_a <= A;
   end if;
 end process;
 
 -- registrador B
 process begin
-  wait until risingedge(CLOCK);
+  wait until rising_edge(CLOCK);
     if ld_reg_b = '1' then reg_b <= B;
   end if;
 end process;
 
 -- registrador C
 process begin
-  wait until risingedge(CLOCK);
+  wait until rising_edge(CLOCK);
     if ld_reg_c = '1' then reg_c <= reg_a*reg_b;
   end if;
 end process;
 
 -- registrador D
 process begin
-  wait until risingedge(CLOCK);
+  wait until rising_edge(CLOCK);
     if ld_reg_d = '1' then reg_d <= mux;
   end if;
 end process;

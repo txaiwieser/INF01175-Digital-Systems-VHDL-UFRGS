@@ -1,0 +1,12 @@
+Command line:
+   tb_matrix_multiplier_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/matrix_multiplier_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  49241
+
+Mon Jul 07 02:38:03 2014
+
+
+ Elaboration Time: 0.921875 sec

@@ -1,0 +1,4 @@
+work	"../matrix_multiplier_final_arq/mad_block_po.vhd"
+work	"../matrix_multiplier_final_arq/matrix_multiplier.vhd"
+work	"../matrix_multiplier_final_arq/mm_state_machine.vhd"
+work	"ipcore_dir/mem48dual.vhd"

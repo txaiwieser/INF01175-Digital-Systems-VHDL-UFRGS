@@ -1,0 +1,47 @@
+ISim log file
+Running: Z:\ProjetosSistemasDigitaisVHDL\projeto_MATRIX_multiplier\matrix_multiplier_final\tb_matrix_multiplier_isim_par.exe -intstyle ise -gui -sdfmax /uut/=netgen/par/matrix_multiplier_timesim.sdf -sdfroot /uut -tclbatch isim.cmd -wdb Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final/tb_matrix_multiplier_isim_par.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+INFO: SDF backannotation was successful with SDF file netgen/par/matrix_multiplier_timesim.sdf, for root module /uut/.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 555393 ps(5), Instance /tb_matrix_multiplier/uut/PC_internal_loop_counter_2/ : Warning: /X_LATCHE SETUP High VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.115 ns; Observed := 0.002 ns; At : 555.393 ns
+at 555397 ps(3), Instance /tb_matrix_multiplier/uut/PC_internal_loop_counter_2/ : Warning: /X_LATCHE HOLD High VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.042 ns; Observed := 0.004 ns; At : 555.397 ns
+at 555639 ps(5), Instance /tb_matrix_multiplier/uut/PC_internal_adress_mem_2_3/ : Warning: /X_LATCHE SETUP  Low VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.115 ns; Observed := 0.079 ns; At : 555.639 ns
+at 555664 ps(5), Instance /tb_matrix_multiplier/uut/PC_internal_adress_mem_2_7/ : Warning: /X_LATCHE SETUP  Low VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.115 ns; Observed := 0.004 ns; At : 555.664 ns
+at 555669 ps(5), Instance /tb_matrix_multiplier/uut/PC_internal_adress_mem_2_1/ : Warning: /X_LATCHE SETUP  Low VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.115 ns; Observed := 0.031 ns; At : 555.669 ns
+at 555669 ps(5), Instance /tb_matrix_multiplier/uut/PC_internal_adress_mem_2_4/ : Warning: /X_LATCHE SETUP High VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.115 ns; Observed := 0.005 ns; At : 555.669 ns
+at 555669 ps(5), Instance /tb_matrix_multiplier/uut/PC_internal_adress_mem_2_5/ : Warning: /X_LATCHE SETUP  Low VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.115 ns; Observed := 0.012 ns; At : 555.669 ns
+at 555670 ps(3), Instance /tb_matrix_multiplier/uut/PC_internal_adress_mem_2_4/ : Warning: /X_LATCHE HOLD High VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.042 ns; Observed := 0.001 ns; At : 555.67 ns
+at 652667 ps(4), Instance /tb_matrix_multiplier/uut/BLOCK1_Mmult_reg_c_mult0000/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 752673 ps(3), Instance /tb_matrix_multiplier/uut/BLOCK1_reg_d_0/ : Warning: /X_FF SETUP High VIOLATION ON CE WITH RESPECT TO CLK;
+  Expected := 0.482 ns; Observed := 0.47 ns; At : 752.673 ns
+at 752673 ps(3), Instance /tb_matrix_multiplier/uut/BLOCK1_reg_d_3/ : Warning: /X_FF SETUP High VIOLATION ON CE WITH RESPECT TO CLK;
+  Expected := 0.482 ns; Observed := 0.47 ns; At : 752.673 ns
+at 752673 ps(3), Instance /tb_matrix_multiplier/uut/BLOCK1_reg_d_2/ : Warning: /X_FF SETUP High VIOLATION ON CE WITH RESPECT TO CLK;
+  Expected := 0.482 ns; Observed := 0.47 ns; At : 752.673 ns
+at 752675 ps(3), Instance /tb_matrix_multiplier/uut/BLOCK1_reg_d_9/ : Warning: /X_FF SETUP High VIOLATION ON CE WITH RESPECT TO CLK;
+  Expected := 0.482 ns; Observed := 0.472 ns; At : 752.675 ns
+at 752675 ps(3), Instance /tb_matrix_multiplier/uut/BLOCK1_reg_d_8/ : Warning: /X_FF SETUP High VIOLATION ON CE WITH RESPECT TO CLK;
+  Expected := 0.482 ns; Observed := 0.472 ns; At : 752.675 ns
+at 755650 ps(5), Instance /tb_matrix_multiplier/uut/PC_internal_loop_counter_2/ : Warning: /X_LATCHE SETUP High VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.115 ns; Observed := 0.002 ns; At : 755.65 ns
+at 755654 ps(3), Instance /tb_matrix_multiplier/uut/PC_internal_loop_counter_2/ : Warning: /X_LATCHE HOLD High VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.042 ns; Observed := 0.004 ns; At : 755.654 ns
+at 755846 ps(5), Instance /tb_matrix_multiplier/uut/PC_internal_adress_mem_2_0/ : Warning: /X_LATCHE SETUP  Low VIOLATION ON I WITH RESPECT TO CLK;
+  Expected := 0.115 ns; Observed := 0.047 ns; At : 755.846 ns

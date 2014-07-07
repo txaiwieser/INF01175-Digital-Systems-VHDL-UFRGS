@@ -1,0 +1,43 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final_arq/mm_state_machine.vhd" in Library work.
+Entity <mm_state_machine> compiled.
+ERROR:HDLParsers:3312 - "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final_arq/mm_state_machine.vhd" Line 76. Undefined symbol 'internal_result_output'.
+ERROR:HDLParsers:1209 - "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final_arq/mm_state_machine.vhd" Line 110. internal_result_output: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final_arq/mm_state_machine.vhd" Line 141. Undefined symbol 'interna_result_output'.
+ERROR:HDLParsers:1209 - "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final_arq/mm_state_machine.vhd" Line 141. interna_result_output: Undefined symbol (last report in this block)
+ERROR:HDLParsers:837 - "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final_arq/mm_state_machine.vhd" Line 312. Width mismatch. Expected width 8, Actual width is 6 for dimension 1 of internal_qtd_outputs.
+ERROR:HDLParsers:164 - "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final_arq/mm_state_machine.vhd" Line 341. parse error, unexpected SEMICOLON
+ERROR:HDLParsers:802 - "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final_arq/mm_state_machine.vhd" Line 359. interna_done is not a boolean expression.
+ERROR:HDLParsers:3312 - "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final_arq/mm_state_machine.vhd" Line 372. Undefined symbol 'interna_result_output'.
+ERROR:HDLParsers:1209 - "//psf/shared_vm/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final_arq/mm_state_machine.vhd" Line 372. interna_result_output: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> 
+
+Total memory usage is 212388 kilobytes
+
+Number of errors   :    9 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

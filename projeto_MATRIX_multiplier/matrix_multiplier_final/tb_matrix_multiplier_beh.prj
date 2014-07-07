@@ -1,0 +1,5 @@
+vhdl work "ipcore_dir/mem48dual.vhd"
+vhdl work "../matrix_multiplier_final_arq/mm_state_machine.vhd"
+vhdl work "../matrix_multiplier_final_arq/mad_block_po.vhd"
+vhdl work "../matrix_multiplier_final_arq/matrix_multiplier.vhd"
+vhdl work "../matrix_multiplier_final_arq/tb_matrix_multiplier.vhd"

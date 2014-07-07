@@ -1,0 +1,4 @@
+vhdl work "\\psf\shared_vm\ProjetosSistemasDigitaisVHDL\projeto_MATRIX_multiplier\matrix_multiplier_final\ipcore_dir\mem48dual.vhd"
+vhdl work "\\psf\shared_vm\ProjetosSistemasDigitaisVHDL\projeto_MATRIX_multiplier\matrix_multiplier_final_arq\mm_state_machine.vhd"
+vhdl work "\\psf\shared_vm\ProjetosSistemasDigitaisVHDL\projeto_MATRIX_multiplier\matrix_multiplier_final_arq\mad_block_po.vhd"
+vhdl work "\\psf\shared_vm\ProjetosSistemasDigitaisVHDL\projeto_MATRIX_multiplier\matrix_multiplier_final_arq\matrix_multiplier.vhd"

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final/tb_matrix_multiplier_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_matrix_multiplier" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/tb_matrix_multiplier/m_clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">m_clock</obj_property>
+      <obj_property name="ObjectShortName">m_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_matrix_multiplier/m_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">m_reset</obj_property>
+      <obj_property name="ObjectShortName">m_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_matrix_multiplier/final_output_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">final_output_result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">final_output_result[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_matrix_multiplier/done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_matrix_multiplier/m_clock_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">m_clock_period</obj_property>
+      <obj_property name="ObjectShortName">m_clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_matrix_multiplier/uut/PC/estado_atual" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">estado_atual</obj_property>
+      <obj_property name="ObjectShortName">estado_atual</obj_property>
+   </wvobject>
+</wave_config>

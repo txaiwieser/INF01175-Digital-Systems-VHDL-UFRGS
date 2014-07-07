@@ -1,0 +1,43 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final/tb_matrix_multiplier_isim_par.exe -prj Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final/tb_matrix_multiplier_par.prj work.tb_matrix_multiplier 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 5
+Turning on mult-threading, number of parallel sub-compilation jobs: 10 
+Determining compilation order of HDL files
+Parsing VHDL file "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final/netgen/par/matrix_multiplier_timesim.vhd" into library work
+Parsing VHDL file "Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final/../matrix_multiplier_final_arq/tb_matrix_multiplier.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package textio
+Compiling package vital_timing
+Compiling package vcomponents
+Compiling package vital_primitives
+Compiling package vpackage
+Compiling package std_logic_arith
+Compiling package std_logic_signed
+Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_xor2_v of entity X_XOR2 [\X_XOR2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_mux2_v of entity X_MUX2 [\X_MUX2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_and2_v of entity X_AND2 [\X_AND2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"PAD34",(0,0),(...]
+Compiling architecture x_latche_v of entity X_LATCHE [\X_LATCHE(true,true,true,"UNPLAC...]
+Compiling architecture x_bufgmux_v of entity X_BUFGMUX [\X_BUFGMUX(true,"*",true,false,"...]
+Compiling architecture x_mult18x18sio_v of entity X_MULT18X18SIO [\X_MULT18X18SIO(1,1,"DIRECT",1,t...]
+Compiling architecture x_ramb16_s36_s36_v of entity X_RAMB16_S36_S36 [\X_RAMB16_S36_S36:tb_matrix_mult...]
+Compiling architecture x_ramb16_s36_s36_v of entity X_RAMB16_S36_S36 [\X_RAMB16_S36_S36:tb_matrix_mult...]
+Compiling architecture x_lut4_v of entity X_LUT4 [\X_LUT4(true,true,"UNPLACED",(0,...]
+Compiling architecture x_ff_v of entity X_FF [\X_FF(true,true,true,"UNPLACED",...]
+Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
+Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_zero_v of entity X_ZERO [\X_ZERO("UNPLACED")(1,8)\]
+Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
+Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
+Compiling architecture structure of entity matrix_multiplier [\matrix_multiplier:tb_matrix_mul...]
+Compiling architecture behavior of entity tb_matrix_multiplier
+Time Resolution for simulation is 1ps.
+Compiled 862 VHDL Units
+Built simulation executable Z:/ProjetosSistemasDigitaisVHDL/projeto_MATRIX_multiplier/matrix_multiplier_final/tb_matrix_multiplier_isim_par.exe
+Fuse Memory Usage: 102196 KB
+Fuse CPU Usage: 6280 ms
